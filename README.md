@@ -5,7 +5,7 @@
 
 - 🔭 I’m currently working on **Guardiant**
 
-- 🌱 I’m currently learning **Go , Backend**
+- 🌱 I’m currently learning **Backend**
 
 - 👨‍💻 All of my projects are available at [https://dk04.vercel.app/](https://dk04.vercel.app/)
 
