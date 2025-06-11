@@ -1,15 +1,15 @@
 
 
 <h1 align="center">Hi 👋, I'm Deepesh Kakkar</h1>
-<h3 align="center">A passionate frontend developer from India</h3>
+<h3 align="center">A passionate Full stack developer from India</h3>
 
-- 🔭 I’m currently working on **Guardiant**
+- 🔭 I’m currently working on **Meet.Ai**
 
-- 🌱 I’m currently learning **Backend**
+- 🌱 I’m currently learning **Agentic AI**
 
 - 👨‍💻 All of my projects are available at [https://dk04.vercel.app/](https://dk04.vercel.app/)
 
-- 💬 Ask me about **Three.js and Gsap**
+- 💬 Ask me about **Next.js and React.js**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
