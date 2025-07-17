@@ -3,9 +3,9 @@
 <h1 align="center">Hi 👋, I'm Deepesh Kakkar</h1>
 <h3 align="center">A passionate Full stack developer from India</h3>
 
-- 🔭 I’m currently working on **Meet.Ai**
+- 🔭 I’m currently working on **CP**
 
-- 🌱 I’m currently learning **Agentic AI**
+- 🌱 I’m currently learning **Backend and Cloud **
 
 - 👨‍💻 All of my projects are available at [https://dk04.vercel.app/](https://dk04.vercel.app/)
 
