@@ -5,7 +5,7 @@
 
 - 🔭 I’m currently working on **CP**
 
-- 🌱 I’m currently learning **Backend and Cloud **
+- 🌱 I’m currently learning **Backend & Cloud**
 
 - 👨‍💻 All of my projects are available at [https://dk04.vercel.app/](https://dk04.vercel.app/)
 
