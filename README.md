@@ -3,7 +3,7 @@
 <h1 align="center">Hi 👋, I'm Deepesh Kakkar</h1>
 <h3 align="center">A passionate Full stack developer from India</h3>
 
-- 🔭 I’m currently working on **CP**
+- 🔭 I’m currently working on **PrepWise**
 
 - 🌱 I’m currently learning **Backend & Cloud**
 
