@@ -40,7 +40,7 @@
 
 I am a **Software & AI Engineer** with a deep passion for building high-performance Next.js applications, decentralized Web3 protocols, and distributed AI telemetry systems. I bridge the gap between stunning frontend aesthetics and robust, scalable AI backends. 
 
-- 🎓 **Education:** B.E. Electronics and Computers @ Thapar Institute of Engineering and Technology *(CGPA: 8.02 | 2027)*
+- 🎓 **Education:** B.E. Electronics and Computers @ Thapar Institute of Engineering and Technology *(2027)*
 - 🏆 **Achievements:** 
   - 🏅 **India Book of Records Holder** *(Fastest Memory Practitioner)*
   - 🥇 **Winner**, Most Innovative Hack @ HackSpire 2025
