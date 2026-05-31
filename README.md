@@ -230,7 +230,7 @@ I am a **Software & AI Engineer** with a deep passion for building high-performa
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=DEEPESH-845&bg_color=0D1117&color=00ff7f&line=00ff7f&point=E6EDF3&area=true&hide_border=true&custom_title=Contributions%20over%20time" alt="Activity Graph" width="100%" />
 </div>
  
- <br/><br/>
+ 
 
 <p align="center">
   <img src="./assets/divider.svg" width="100%" height="6" alt="" />
