@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- Banner -->
-<img src="https://capsule-render.vercel.app/api?type=transparent&color=00FF7F&height=250&section=header&text=DEEPESH%20KAKKAR&fontSize=90&fontColor=ffffff&animation=twinkling&desc=SOFTWARE%20ENGINEER%20%E2%80%A2%20AI%20%E2%80%A2%20WEB3&descAlignY=75&descAlign=50&descSize=22&stroke=00FF7F" alt="Deepesh Kakkar" />
+<img src="./assets/banner.svg" alt="Deepesh Kakkar" />
 
 <!-- Typing headline -->
 <a href="https://github.com/DEEPESH-845">
@@ -14,14 +14,14 @@
   <img src="https://img.shields.io/badge/Software%20Engineer-1F2937?style=for-the-badge&labelColor=0D1117&border=00FF7F" alt="Software Engineer" />
   <img src="https://img.shields.io/badge/Frontend%20Engineer-1F2937?style=for-the-badge&labelColor=0D1117&border=00FF7F" alt="Frontend Engineer" />
   <img src="https://img.shields.io/badge/AI%20Engineer-1F2937?style=for-the-badge&labelColor=0D1117&border=00FF7F" alt="AI Engineer" />
-  <img src="https://img.shields.io/badge/%E2%97%8F%20Available%20for%20work-1F2937?style=for-the-badge&labelColor=1F2937&color=00FF7F" alt="Available for work" />
+  <img src="./assets/spacer.svg" width="36" height="28" alt="" />
 </p>
 
 <!-- Socials -->
 <p align="center">
   <a href="https://www.linkedin.com/in/deepesh-kakkar/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
   <a href="mailto:dkakkar.be23@thapar.edu"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
-  <a href="tel:+917707898003"><img src="https://img.shields.io/badge/Phone-%2B91%207707898003-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="Phone" /></a>
+  <a href="https://github.com/DEEPESH-845"><img src="https://img.shields.io/badge/Portfolio-00ff7f?style=for-the-badge&logo=vercel&logoColor=0D1117" alt="Portfolio" /></a>
   <a href="https://github.com/DEEPESH-845"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
 </p>
 
@@ -29,9 +29,14 @@
 
 </div>
 
-<br/>
+<p align="center">
+  <img src="./assets/divider.svg" width="100%" height="6" alt="" />
+</p>
 
-## ⚡ About Me
+<!-- Animated section heading: About -->
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&color=00FF7F&center=true&vCenter=true&width=500&height=50&lines=About+Me&pause=1000&duration=11000" alt="About Me" />
+</p>
 
 I am a **Software & AI Engineer** with a deep passion for building high-performance Next.js applications, decentralized Web3 protocols, and distributed AI telemetry systems. I bridge the gap between stunning frontend aesthetics and robust, scalable AI backends. 
 
@@ -43,9 +48,14 @@ I am a **Software & AI Engineer** with a deep passion for building high-performa
   - 🚀 **Finalist**, Qualcomm Edge AI Hackathon & Israeli-Indian Hackathon
 - ⚡ **Currently:** Building intelligent agents with LangGraph and crafting GSAP-powered 3D web experiences.
 
-<br/>
+<p align="center">
+  <img src="./assets/divider.svg" width="100%" height="6" alt="" />
+</p>
 
-## 💼 Experience
+<!-- Animated section heading: Experience -->
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&color=00FF7F&center=true&vCenter=true&width=500&height=50&lines=Experience&pause=1000&duration=11000" alt="Experience" />
+</p>
 
 <table>
   <tr>
@@ -75,9 +85,14 @@ I am a **Software & AI Engineer** with a deep passion for building high-performa
 **🚀 Head of Technology** @ **Saturnalia TIET** *(Sep 2025 – Nov 2025)*
 > Architected a robust event-tech platform. Spearheaded infrastructure leadership, scaling CI/CD, security protocols, and observability for thousands of concurrent users.
 
-<br/>
+<p align="center">
+  <img src="./assets/divider.svg" width="100%" height="6" alt="" />
+</p>
 
-## 🚀 Featured Projects
+<!-- Animated section heading: Featured Projects -->
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&color=00FF7F&center=true&vCenter=true&width=500&height=50&lines=Featured+Projects&pause=1000&duration=11000" alt="Featured Projects" />
+</p>
 
 <table>
   <tr>
@@ -106,26 +121,93 @@ I am a **Software & AI Engineer** with a deep passion for building high-performa
   </tr>
 </table>
 
-<br/>
+<p align="center">
+  <img src="./assets/divider.svg" width="100%" height="6" alt="" />
+</p>
 
-## 🛠️ Tech Arsenal
+<!-- Animated section heading: Tech -->
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&color=00FF7F&center=true&vCenter=true&width=500&height=50&lines=Tech+Arsenal&pause=1000&duration=11000" alt="Tech Arsenal" />
+</p>
 
-<div align="center">
-  
-| Category | Technologies |
-| :--- | :--- |
-| **Languages** | <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=cplusplus&logoColor=white" /> <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" /> <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" /> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=000" /> <img src="https://img.shields.io/badge/Solidity-363636?style=flat-square&logo=solidity&logoColor=white" /> |
-| **Frontend** | <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" /> <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" /> <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white" /> <img src="https://img.shields.io/badge/GSAP-88CE02?style=flat-square&logo=greensock&logoColor=white" /> <img src="https://img.shields.io/badge/Three.js-000000?style=flat-square&logo=three.js&logoColor=white" /> <img src="https://img.shields.io/badge/Framer_Motion-0055FF?style=flat-square&logo=framer&logoColor=white" /> |
-| **Backend** | <img src="https://img.shields.io/badge/Node.js-43853D?style=flat-square&logo=node.js&logoColor=white" /> <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" /> <img src="https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white" /> <img src="https://img.shields.io/badge/GraphQL-E10098?style=flat-square&logo=graphql&logoColor=white" /> <img src="https://img.shields.io/badge/WebSockets-010101?style=flat-square&logo=socketdotio&logoColor=white" /> |
-| **AI & ML** | <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" /> <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square" /> <img src="https://img.shields.io/badge/LangGraph-1C3C3C?style=flat-square" /> <img src="https://img.shields.io/badge/RAG-111111?style=flat-square" /> <img src="https://img.shields.io/badge/Scikit_Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white" /> |
-| **Databases** | <img src="https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white" /> <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=flat-square&logo=mongodb&logoColor=white" /> <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white" /> <img src="https://img.shields.io/badge/DynamoDB-4053D6?style=flat-square&logo=amazondynamodb&logoColor=white" /> |
-| **Cloud & DevOps**| <img src="https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazon-aws&logoColor=white" /> <img src="https://img.shields.io/badge/Docker-2CA5E0?style=flat-square&logo=docker&logoColor=white" /> <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white" /> <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white" /> <img src="https://img.shields.io/badge/CI%2FCD-232F3E?style=flat-square" /> |
+<!-- Using EXACTLY all 48 icons from the assets folder -->
+<p align="center">
+  <img src="./assets/icons/si-js.svg" width="48" height="48" title="JavaScript" alt="JavaScript" /> &nbsp;
+  <img src="./assets/icons/si-ts.svg" width="48" height="48" title="TypeScript" alt="TypeScript" /> &nbsp;
+  <img src="./assets/icons/si-php.svg" width="48" height="48" title="PHP" alt="PHP" /> &nbsp;
+  <img src="./assets/icons/si-python.svg" width="48" height="48" title="Python" alt="Python" /> &nbsp;
+  <img src="./assets/icons/si-solidity.svg" width="48" height="48" title="Solidity" alt="Solidity" /> &nbsp;
+  <img src="./assets/icons/si-react.svg" width="48" height="48" title="React" alt="React" /> &nbsp;
+  <img src="./assets/icons/si-nextjs.svg" width="48" height="48" title="Next.js" alt="Next.js" /> &nbsp;
+  <img src="./assets/icons/si-nodejs.svg" width="48" height="48" title="Node.js" alt="Node.js" /> &nbsp;
+  <img src="./assets/icons/si-express.svg" width="48" height="48" title="Express.js" alt="Express.js" /> &nbsp;
+  <img src="./assets/icons/si-laravel.svg" width="48" height="48" title="Laravel" alt="Laravel" />
+</p>
 
-</div>
+<p align="center">
+  <img src="./assets/icons/si-tailwind.svg" width="48" height="48" title="Tailwind CSS" alt="Tailwind CSS" /> &nbsp;
+  <img src="./assets/icons/si-materialui.svg" width="48" height="48" title="Material UI" alt="Material UI" /> &nbsp;
+  <img src="./assets/icons/si-docker.svg" width="48" height="48" title="Docker" alt="Docker" /> &nbsp;
+  <img src="./assets/icons/si-cloudflare.svg" width="48" height="48" title="Cloudflare" alt="Cloudflare" /> &nbsp;
+  <img src="./assets/icons/si-nginx.svg" width="48" height="48" title="Nginx" alt="Nginx" /> &nbsp;
+  <img src="./assets/icons/si-aws.svg" width="48" height="48" title="AWS" alt="AWS" /> &nbsp;
+  <img src="./assets/icons/si-githubactions.svg" width="48" height="48" title="GitHub Actions" alt="GitHub Actions" /> &nbsp;
+  <img src="./assets/icons/si-postgres.svg" width="48" height="48" title="PostgreSQL" alt="PostgreSQL" />
+</p>
 
-<br/>
+<p align="center">
+  <img src="./assets/icons/si-mysql.svg" width="48" height="48" title="MySQL" alt="MySQL" /> &nbsp;
+  <img src="./assets/icons/si-mongodb.svg" width="48" height="48" title="MongoDB" alt="MongoDB" /> &nbsp;
+  <img src="./assets/icons/si-git.svg" width="48" height="48" title="Git" alt="Git" /> &nbsp;
+  <img src="./assets/icons/si-github.svg" width="48" height="48" title="GitHub" alt="GitHub" /> &nbsp;
+  <img src="./assets/icons/si-linux.svg" width="48" height="48" title="Linux" alt="Linux" /> &nbsp;
+  <img src="./assets/icons/si-vscode.svg" width="48" height="48" title="VS Code" alt="VS Code" /> &nbsp;
+  <img src="./assets/icons/si-postman.svg" width="48" height="48" title="Postman" alt="Postman" /> &nbsp;
+  <img src="./assets/icons/si-discord.svg" width="48" height="48" title="Discord" alt="Discord" />
+</p>
 
-## 📊 GitHub Analytics
+<p align="center">
+  <img src="./assets/icons/shadcnui.svg" width="48" height="48" title="Shadcn UI" alt="Shadcn UI" /> &nbsp;
+  <img src="./assets/icons/motion.png" width="48" height="48" title="Motion" alt="Motion" /> &nbsp;
+  <img src="./assets/icons/aceternity.png" width="48" height="48" title="Aceternity UI" alt="Aceternity UI" /> &nbsp;
+  <img src="./assets/icons/cpanel.svg" width="48" height="48" title="cPanel" alt="cPanel" /> &nbsp;
+  <img src="./assets/icons/ganache.svg" width="40" height="48" title="Ganache" alt="Ganache" /> &nbsp;
+  <img src="./assets/icons/ipfs.svg" width="48" height="48" title="IPFS" alt="IPFS" />
+</p>
+
+<p align="center">
+  <img src="./assets/icons/jira.svg" width="48" height="48" title="Jira" alt="Jira" /> &nbsp;
+  <img src="./assets/icons/clickup.svg" width="48" height="48" title="ClickUp" alt="ClickUp" /> &nbsp;
+  <img src="./assets/icons/slack.png" width="48" height="48" title="Slack" alt="Slack" /> &nbsp;
+  <img src="./assets/icons/rocketdotchat.svg" width="48" height="48" title="Rocket.Chat" alt="Rocket.Chat" /> &nbsp;
+  <img src="./assets/icons/claude.svg" width="48" height="48" title="Claude Code" alt="Claude Code" /> &nbsp;
+  <img src="./assets/icons/openclaw.svg" width="48" height="48" title="OpenClaw" alt="OpenClaw" />
+</p>
+
+<p align="center">
+  <img src="./assets/icons/githubactions.svg" width="48" height="48" title="CI/CD" alt="CI/CD" /> &nbsp;
+  <img src="./assets/icons/pm2.svg" width="48" height="48" title="PM2" alt="PM2" /> &nbsp;
+  <img src="./assets/icons/ec2.svg" width="48" height="48" title="AWS EC2" alt="AWS EC2" /> &nbsp;
+  <img src="./assets/icons/route53.svg" width="48" height="48" title="AWS Route 53" alt="AWS Route 53" /> &nbsp;
+  <img src="./assets/icons/framer.svg" width="48" height="48" title="Framer" alt="Framer" /> &nbsp;
+  <img src="./assets/icons/hostinger.svg" width="48" height="48" title="Hostinger" alt="Hostinger" />
+</p>
+
+<p align="center">
+  <img src="./assets/icons/ethereum.svg" width="48" height="48" title="Smart Contracts" alt="Smart Contracts" /> &nbsp;
+  <img src="./assets/icons/opensea.svg" width="48" height="48" title="NFTs" alt="NFTs" /> &nbsp;
+  <img src="./assets/icons/ethers.svg" width="72" height="48" title="Ethers.js" alt="Ethers.js" /> &nbsp;
+  <img src="./assets/icons/web3dotjs.svg" width="48" height="48" title="Web3.js" alt="Web3.js" />
+</p>
+
+<p align="center">
+  <img src="./assets/divider.svg" width="100%" height="6" alt="" />
+</p>
+
+<!-- Animated section heading: GitHub Analytics -->
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&color=00FF7F&center=true&vCenter=true&width=500&height=50&lines=GitHub+Analytics&pause=1000&duration=11000" alt="GitHub Analytics" />
+</p>
 
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=DEEPESH-845&show_icons=true&theme=radical&bg_color=0D1117&border_color=00ff7f&title_color=00ff7f&text_color=E6EDF3" height="195" alt="GitHub Stats" />
@@ -142,5 +224,5 @@ I am a **Software & AI Engineer** with a deep passion for building high-performa
 
 <!-- Footer -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00FF7F,100:0D1117&height=120&section=footer" alt="" />
+  <img src="./assets/footer.svg" alt="" />
 </p>

@@ -60,7 +60,7 @@
     <text x="600" y="160" text-anchor="middle"
           font-family="Segoe UI, system-ui, -apple-system, BlinkMacSystemFont, sans-serif"
           font-size="78" font-weight="800" fill="#E6EDF3" letter-spacing="-1.5">
-      Abbas Raza
+      Deepesh Kakkar
       <animate attributeName="opacity" from="0" to="1" dur="1.2s" fill="freeze"/>
     </text>
   </g>
