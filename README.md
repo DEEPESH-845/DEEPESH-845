@@ -212,14 +212,25 @@ I am a **Software & AI Engineer** with a deep passion for building high-performa
 <div align="center">
 
   
-  <br/><br/>
+  
 
   <img src="https://streak-stats.demolab.com/?user=DEEPESH-845&theme=radical&background=0D1117&border=00ff7f&stroke=00ff7f&ring=00ff7f&fire=00ff7f&currStreakLabel=00ff7f&sideLabels=E6EDF3&dates=E6EDF3&currStreakNum=E6EDF3&sideNums=E6EDF3" height="195" alt="GitHub Streak" />
   
+
+  <br/><br/>
  
+ <p align="center">
+  <img src="./assets/divider.svg" width="100%" height="6" alt="" />
+</p>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&color=00FF7F&center=true&vCenter=true&width=500&height=50&lines=Contribution+Activity&pause=1000&duration=11000" alt="Contribution Activity" />
+</p>
   
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=DEEPESH-845&bg_color=0D1117&color=00ff7f&line=00ff7f&point=E6EDF3&area=true&hide_border=true&custom_title=Contributions%20over%20time" alt="Activity Graph" width="80%" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=DEEPESH-845&bg_color=0D1117&color=00ff7f&line=00ff7f&point=E6EDF3&area=true&hide_border=true&custom_title=Contributions%20over%20time" alt="Activity Graph" width="100%" />
 </div>
+
+<br/><br/>
 
 <p align="center">
   <img src="./assets/divider.svg" width="100%" height="6" alt="" />
@@ -227,5 +238,5 @@ I am a **Software & AI Engineer** with a deep passion for building high-performa
 
 <!-- Footer -->
 <p align="center">
-  <img src="./assets/footer.svg" alt="" />
+  <img src="./assets/footer.svg" alt=""  width= "100%/>
 </p>
