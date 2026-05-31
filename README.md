@@ -5,7 +5,7 @@
 
 <!-- Typing headline -->
 <a href="https://github.com/DEEPESH-845">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=26&pause=1000&duration=8000&color=00FF7F&center=true&vCenter=true&width=800&height=60&lines=Turning+Complex+Ideas+Into+Production+Systems;Architecting+Scalable+Intelligence;Building+High-Performance+Web+Applications" alt="typing headline" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&color=00FF7F&center=true&vCenter=true&width=800&height=50&lines=Turning+Complex+Ideas+Into+Production+Systems;Architecting+Scalable+Intelligence;Building+High-Performance+Web+Applications&pause=1000&duration=11000" alt="typing headline" />
 </a>
 
 <br/>
@@ -35,7 +35,7 @@
 
 <!-- Animated section heading: About -->
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&color=00FF7F&center=true&vCenter=true&width=500&height=50&lines=About+Me&pause=1000&duration=11000" alt="About Me" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&color=00FF7F&center=true&vCenter=true&width=800&height=50&lines=About+Me&pause=1000&duration=11000" alt="About Me" />
 </p>
 
 I am a **Software & AI Engineer** with a deep passion for building high-performance Next.js applications, decentralized Web3 protocols, and distributed AI telemetry systems. I bridge the gap between stunning frontend aesthetics and robust, scalable AI backends. 
@@ -54,7 +54,7 @@ I am a **Software & AI Engineer** with a deep passion for building high-performa
 
 <!-- Animated section heading: Experience -->
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&color=00FF7F&center=true&vCenter=true&width=500&height=50&lines=Experience&pause=1000&duration=11000" alt="Experience" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&color=00FF7F&center=true&vCenter=true&width=800&height=50&lines=Experience&pause=1000&duration=11000" alt="Experience" />
 </p>
 
 <table>
@@ -91,7 +91,7 @@ I am a **Software & AI Engineer** with a deep passion for building high-performa
 
 <!-- Animated section heading: Featured Projects -->
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&color=00FF7F&center=true&vCenter=true&width=500&height=50&lines=Featured+Projects&pause=1000&duration=11000" alt="Featured Projects" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&color=00FF7F&center=true&vCenter=true&width=800&height=50&lines=Featured+Projects&pause=1000&duration=11000" alt="Featured Projects" />
 </p>
 
 <table>
@@ -127,7 +127,7 @@ I am a **Software & AI Engineer** with a deep passion for building high-performa
 
 <!-- Animated section heading: Tech -->
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&color=00FF7F&center=true&vCenter=true&width=500&height=50&lines=Tech+Arsenal&pause=1000&duration=11000" alt="Tech Arsenal" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&color=00FF7F&center=true&vCenter=true&width=800&height=50&lines=Tech+Arsenal&pause=1000&duration=11000" alt="Tech Arsenal" />
 </p>
 
 <!-- Using EXACTLY all 48 icons from the assets folder -->
@@ -219,7 +219,7 @@ I am a **Software & AI Engineer** with a deep passion for building high-performa
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&color=00FF7F&center=true&vCenter=true&width=500&height=50&lines=Contribution+Activity&pause=1000&duration=11000" alt="Contribution Activity" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&color=00FF7F&center=true&vCenter=true&width=800&height=50&lines=Contribution+Activity&pause=1000&duration=11000" alt="Contribution Activity" />
 </p>
   
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=DEEPESH-845&bg_color=0D1117&color=00ff7f&line=00ff7f&point=E6EDF3&area=true&hide_border=true&custom_title=Contributions%20over%20time" alt="Activity Graph" width="100%" />
