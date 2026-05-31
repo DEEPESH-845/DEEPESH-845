@@ -20,8 +20,8 @@
 <!-- Socials -->
 <p align="center">
   <a href="https://www.linkedin.com/in/deepesh-kakkar/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-  <a href="mailto:dkakkar.be23@thapar.edu"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
-  <a href="https://github.com/DEEPESH-845"><img src="https://img.shields.io/badge/Portfolio-00ff7f?style=for-the-badge&logo=vercel&logoColor=0D1117" alt="Portfolio" /></a>
+  <a href="mailto:deepeshkakkar.work@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+  <a href="https://deepesh.qzz.io/"><img src="https://img.shields.io/badge/Portfolio-00ff7f?style=for-the-badge&logo=vercel&logoColor=0D1117" alt="Portfolio" /></a>
   <a href="https://github.com/DEEPESH-845"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
 </p>
 
@@ -210,17 +210,20 @@ I am a **Software & AI Engineer** with a deep passion for building high-performa
 </p>
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=DEEPESH-845&show_icons=true&theme=radical&bg_color=0D1117&border_color=00ff7f&title_color=00ff7f&text_color=E6EDF3" height="195" alt="GitHub Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=DEEPESH-845&layout=compact&langs_count=6&theme=radical&bg_color=0D1117&border_color=00ff7f&title_color=00ff7f&text_color=E6EDF3" height="195" alt="Top Languages" />
+
   
   <br/><br/>
 
   <img src="https://streak-stats.demolab.com/?user=DEEPESH-845&theme=radical&background=0D1117&border=00ff7f&stroke=00ff7f&ring=00ff7f&fire=00ff7f&currStreakLabel=00ff7f&sideLabels=E6EDF3&dates=E6EDF3&currStreakNum=E6EDF3&sideNums=E6EDF3" height="195" alt="GitHub Streak" />
   
-  <br/><br/>
+ 
   
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=DEEPESH-845&bg_color=0D1117&color=00ff7f&line=00ff7f&point=E6EDF3&area=true&hide_border=true&custom_title=Contributions%20over%20time" alt="Activity Graph" width="80%" />
 </div>
+
+<p align="center">
+  <img src="./assets/divider.svg" width="100%" height="6" alt="" />
+</p>
 
 <!-- Footer -->
 <p align="center">
