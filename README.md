@@ -1,6 +1,6 @@
 <!-- Banner -->
 <p align="center">
-  <img src="./assets/banner.svg" alt="Deepesh Kakkar" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,100:00FF7F&height=180&section=header&text=Deepesh%20Kakkar&fontSize=44&fontColor=ffffff&animation=fadeIn" alt="Deepesh Kakkar" />
 </p>
 
 <!-- Role pills — trailing spacer equalizes row so Systems Builder sits at row center -->
@@ -8,7 +8,6 @@
   <img src="https://img.shields.io/badge/Software%20Engineer-1F2937?style=for-the-badge&labelColor=0D1117" alt="Software Engineer" />
   <img src="https://img.shields.io/badge/Frontend%20Engineer-1F2937?style=for-the-badge&labelColor=0D1117" alt="Frontend Engineer" />
   <img src="https://img.shields.io/badge/AI%20Engineer-1F2937?style=for-the-badge&labelColor=0D1117" alt="AI Engineer" />
-  <img src="./assets/spacer.svg" width="36" height="28" alt="" />
 </p>
 
 <!-- Status pill -->
@@ -35,7 +34,7 @@
 </p>
 
 <p align="center">
-  <img src="./assets/divider.svg" width="100%" height="6" alt="" />
+  <hr />
 </p>
 
 <!-- Animated section heading: About -->
@@ -50,7 +49,7 @@
 - LinkedIn -> **[deepesh-kakkar](https://www.linkedin.com/in/deepesh-kakkar/)**
 
 <p align="center">
-  <img src="./assets/divider.svg" width="100%" height="6" alt="" />
+  <hr />
 </p>
 
 <!-- Animated section heading: Tech -->
@@ -59,99 +58,80 @@
 </p>
 
 <p align="center">
-  <img src="./assets/icons/si-js.svg" width="48" height="48" title="JavaScript" alt="JavaScript" />
-  <img src="./assets/icons/si-ts.svg" width="48" height="48" title="TypeScript" alt="TypeScript" />
-  <img src="./assets/icons/si-c.svg" width="48" height="48" title="C" alt="C" />
-  <img src="./assets/icons/si-python.svg" width="48" height="48" title="Python" alt="Python" />
-  <img src="./assets/icons/si-solidity.svg" width="48" height="48" title="Solidity" alt="Solidity" />
-  <img src="./assets/icons/si-react.svg" width="48" height="48" title="React" alt="React" />
-  <img src="./assets/icons/si-nextjs.svg" width="48" height="48" title="Next.js" alt="Next.js" />
-  <img src="./assets/icons/si-nodejs.svg" width="48" height="48" title="Node.js" alt="Node.js" />
-  <img src="./assets/icons/si-express.svg" width="48" height="48" title="Express.js" alt="Express.js" />
-  <img src="./assets/icons/si-fastapi.svg" width="48" height="48" title="FastAPI" alt="FastAPI" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=000000" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=000000" alt="C" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/Solidity-363636?style=for-the-badge&logo=solidity&logoColor=white" alt="Solidity" />
+  <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=000000" alt="React" />
+  <img src="https://img.shields.io/badge/Next.js-111111?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
+  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
+  <img src="https://img.shields.io/badge/Express.js-111111?style=for-the-badge&logo=express&logoColor=white" alt="Express.js" />
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI" />
 </p>
 
 <p align="center">
-  <img src="./assets/icons/si-tailwind.svg" width="48" height="48" title="Tailwind CSS" alt="Tailwind CSS" />
-  <img src="./assets/icons/si-greensock.svg" width="48" height="48" title="GSAP" alt="GSAP" />
-  <img src="./assets/icons/si-docker.svg" width="48" height="48" title="Docker" alt="Docker" />
-  <img src="./assets/icons/si-kubernetes.svg" width="48" height="48" title="Kubernetes" alt="Kubernetes" />
-  <img src="./assets/icons/si-graphql.svg" width="48" height="48" title="GraphQL" alt="GraphQL" />
-  <img src="./assets/icons/si-aws.svg" width="48" height="48" title="AWS" alt="AWS" />
-  <img src="./assets/icons/si-githubactions.svg" width="48" height="48" title="GitHub Actions" alt="GitHub Actions" />
-  <img src="./assets/icons/si-postgres.svg" width="48" height="48" title="PostgreSQL" alt="PostgreSQL" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
+  <img src="https://img.shields.io/badge/GSAP-88CE02?style=for-the-badge&logo=greensock&logoColor=white" alt="GSAP" />
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
+  <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" alt="Kubernetes" />
+  <img src="https://img.shields.io/badge/GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white" alt="GraphQL" />
+  <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white" alt="AWS" />
+  <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" alt="GitHub Actions" />
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
 </p>
 
 <p align="center">
-  <img src="./assets/icons/si-mysql.svg" width="48" height="48" title="MySQL" alt="MySQL" />
-  <img src="./assets/icons/si-mongodb.svg" width="48" height="48" title="MongoDB" alt="MongoDB" />
-  <img src="./assets/icons/si-git.svg" width="48" height="48" title="Git" alt="Git" />
-  <img src="./assets/icons/si-github.svg" width="48" height="48" title="GitHub" alt="GitHub" />
-  <img src="./assets/icons/si-linux.svg" width="48" height="48" title="Linux" alt="Linux" />
-  <img src="./assets/icons/si-vscode.svg" width="48" height="48" title="VS Code" alt="VS Code" />
-  <img src="./assets/icons/si-postman.svg" width="48" height="48" title="Postman" alt="Postman" />
-  <img src="./assets/icons/si-redis.svg" width="48" height="48" title="Redis" alt="Redis" />
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
+  <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
+  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=000000" alt="Linux" />
+  <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white" alt="VS Code" />
+  <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" alt="Postman" />
+  <img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white" alt="Redis" />
 </p>
 
 <!-- Branded icons fetched from each tool's official site -->
 <p align="center">
-  <img src="./assets/icons/dynamodb.svg" width="48" height="48" title="DynamoDB" alt="DynamoDB" />
-  &nbsp;
-  <img src="./assets/icons/motion.png" width="48" height="48" title="Framer Motion" alt="Framer Motion" />
-  &nbsp;
-  <img src="./assets/icons/lenis.svg" width="48" height="48" title="Lenis" alt="Lenis" />
-  &nbsp;
-  <img src="./assets/icons/pytorch.svg" width="48" height="48" title="PyTorch" alt="PyTorch" />
-  &nbsp;
-  <img src="./assets/icons/scikitlearn.svg" width="40" height="48" title="Scikit-Learn" alt="Scikit-Learn" />
-  &nbsp;
-  <img src="./assets/icons/langchain.svg" width="48" height="48" title="LangChain" alt="LangChain" />
+  <img src="https://img.shields.io/badge/DynamoDB-4053D6?style=for-the-badge&logo=amazondynamodb&logoColor=white" alt="DynamoDB" />
+  <img src="https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white" alt="Framer Motion" />
+  <img src="https://img.shields.io/badge/Lenis-111111?style=for-the-badge" alt="Lenis" />
+  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch" />
+  <img src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white" alt="Scikit-Learn" />
+  <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge" alt="LangChain" />
 </p>
 
 <p align="center">
-  <img src="./assets/icons/threejs.svg" width="48" height="48" title="Three.js" alt="Three.js" />
-  &nbsp;
-  <img src="./assets/icons/websockets.svg" width="48" height="48" title="WebSockets" alt="WebSockets" />
-  &nbsp;
-  <img src="./assets/icons/stripe.svg" width="48" height="48" title="Stripe" alt="Stripe" />
-  &nbsp;
-  <img src="./assets/icons/langgraph.svg" width="48" height="48" title="LangGraph" alt="LangGraph" />
-  &nbsp;
-  <img src="./assets/icons/vectordatabases.svg" width="48" height="48" title="Vector Databases" alt="Vector Databases" />
-  &nbsp;
-  <img src="./assets/icons/rag.svg" width="48" height="48" title="RAG" alt="RAG" />
+  <img src="https://img.shields.io/badge/Three.js-000000?style=for-the-badge&logo=three.js&logoColor=white" alt="Three.js" />
+  <img src="https://img.shields.io/badge/WebSockets-111111?style=for-the-badge" alt="WebSockets" />
+  <img src="https://img.shields.io/badge/Stripe-635BFF?style=for-the-badge&logo=stripe&logoColor=white" alt="Stripe" />
+  <img src="https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge" alt="LangGraph" />
+  <img src="https://img.shields.io/badge/Vector%20Databases-111111?style=for-the-badge" alt="Vector Databases" />
+  <img src="https://img.shields.io/badge/RAG-111111?style=for-the-badge" alt="RAG" />
 </p>
 
 <!-- DevOps / hosting extras -->
 <p align="center">
-  <img src="./assets/icons/githubactions.svg" width="48" height="48" title="CI/CD" alt="CI/CD" />
-  &nbsp;
-  <img src="./assets/icons/vercel.svg" width="48" height="48" title="Vercel" alt="Vercel" />
-  &nbsp;
-  <img src="./assets/icons/ec2.svg" width="48" height="48" title="AWS EC2" alt="AWS EC2" />
-  &nbsp;
-  <img src="./assets/icons/route53.svg" width="48" height="48" title="AWS Route 53" alt="AWS Route 53" />
-  &nbsp;
-  <img src="./assets/icons/cplusplus.svg" width="48" height="48" title="C++" alt="C++" />
-  &nbsp;
-  <img src="./assets/icons/html5.svg" width="48" height="48" title="HTML & CSS" alt="HTML & CSS" />
+  <img src="https://img.shields.io/badge/CI%2FCD-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" alt="CI/CD" />
+  <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel" />
+  <img src="https://img.shields.io/badge/AWS_EC2-232F3E?style=for-the-badge" alt="AWS EC2" />
+  <img src="https://img.shields.io/badge/Route_53-232F3E?style=for-the-badge" alt="AWS Route 53" />
+  <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" alt="C++" />
+  <img src="https://img.shields.io/badge/HTML_%26_CSS-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML & CSS" />
 </p>
 
 <!-- Blockchain ecosystem -->
 <p align="center">
-  <img src="./assets/icons/ethereum.svg" width="48" height="48" title="Smart Contracts" alt="Smart Contracts" />
-  &nbsp;
-  <img src="./assets/icons/networkx.svg" width="48" height="48" title="NetworkX" alt="NetworkX" />
-  &nbsp;
-  <img src="./assets/icons/ethereum.svg" width="48" height="48" title="ERC Standards" alt="ERC Standards" />
-  &nbsp;
-  <img src="./assets/icons/web3dotjs.svg" width="48" height="48" title="Web3.js" alt="Web3.js" />
-  &nbsp;
-  <img src="./assets/icons/ethers.svg" width="72" height="48" title="Ethers.js" alt="Ethers.js" />
+  <img src="https://img.shields.io/badge/Smart_Contracts-3C3C3D?style=for-the-badge&logo=ethereum&logoColor=white" alt="Smart Contracts" />
+  <img src="https://img.shields.io/badge/NetworkX-111111?style=for-the-badge" alt="NetworkX" />
+  <img src="https://img.shields.io/badge/ERC_Standards-3C3C3D?style=for-the-badge&logo=ethereum&logoColor=white" alt="ERC Standards" />
+  <img src="https://img.shields.io/badge/Web3.js-F16822?style=for-the-badge&logo=web3dotjs&logoColor=white" alt="Web3.js" />
+  <img src="https://img.shields.io/badge/Ethers.js-2535A0?style=for-the-badge" alt="Ethers.js" />
 </p>
 
 <p align="center">
-  <img src="./assets/divider.svg" width="100%" height="6" alt="" />
+  <hr />
 </p>
 
 <!-- Animated section heading: GitHub stats -->
@@ -165,7 +145,7 @@
 -->
 </p>
 <p align="center">
-  <img src="./assets/divider.svg" width="100%" height="6" alt="" />
+  <hr />
 </p>
 
 <!-- Animated section heading: Activity -->
@@ -178,7 +158,7 @@
 </p>
 
 <p align="center">
-  <img src="./assets/divider.svg" width="100%" height="6" alt="" />
+  <hr />
 </p>
 
 <!--
@@ -197,5 +177,5 @@
 -->
 
 <p align="center">
-  <img src="./assets/footer.svg" alt="" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00FF7F,100:0D1117&height=120&section=footer" alt="" />
 </p>
