@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 6" width="1200" height="6" preserveAspectRatio="none">
+  <defs>
+    <linearGradient id="base" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00ff7f" stop-opacity="0"/>
+      <stop offset="25%" stop-color="#00ff7f" stop-opacity="0.35"/>
+      <stop offset="50%" stop-color="#00ff7f" stop-opacity="0.6"/>
+      <stop offset="75%" stop-color="#00ff7f" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#00ff7f" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="highlight" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#E6FFF2" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#E6FFF2" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="6" fill="url(#base)"/>
+
+  <rect width="280" height="6" fill="url(#highlight)">
+    <animate attributeName="x" from="-280" to="1200" dur="4s" repeatCount="indefinite"/>
+  </rect>
+</svg>

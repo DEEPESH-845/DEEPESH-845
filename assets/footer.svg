@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" width="1200" height="120" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <pattern id="ftiles" x="-10" y="-10" width="90" height="90" patternUnits="userSpaceOnUse">
+      <rect x="14" y="14" width="62" height="62" rx="14" ry="14" fill="#00ff7f" fill-opacity="0.04" stroke="#00ff7f" stroke-opacity="0.08" stroke-width="1"/>
+    </pattern>
+
+    <linearGradient id="ffade" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0D1117" stop-opacity="1"/>
+      <stop offset="12%" stop-color="#0D1117" stop-opacity="0"/>
+      <stop offset="88%" stop-color="#0D1117" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0D1117" stop-opacity="1"/>
+    </linearGradient>
+
+    <radialGradient id="fglow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00ff7f" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#00ff7f" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="120" fill="#0D1117"/>
+  <rect width="1200" height="120" fill="url(#ftiles)"/>
+
+  <circle cx="600" cy="60" r="80" fill="#00ff7f" fill-opacity="0.08">
+    <animate attributeName="r" values="80;110;80" dur="6s" repeatCount="indefinite"/>
+    <animate attributeName="fill-opacity" values="0.08;0.03;0.08" dur="6s" repeatCount="indefinite"/>
+  </circle>
+
+  <rect width="1200" height="120" fill="url(#fglow)"/>
+  <rect width="1200" height="120" fill="url(#ffade)"/>
+
+  <line x1="500" y1="60" x2="700" y2="60" stroke="#00ff7f" stroke-width="1.5" stroke-opacity="0.5" stroke-linecap="round"/>
+  <circle cx="600" cy="60" r="3" fill="#00ff7f">
+    <animate attributeName="fill-opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+</svg>
