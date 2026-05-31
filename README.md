@@ -46,7 +46,7 @@ I am a **Software & AI Engineer** with a deep passion for building high-performa
   - 🥇 **Winner**, Most Innovative Hack @ HackSpire 2025
   - 🌟 **Top Submission Recognition** @ CodeCircuit.ai
   - 🚀 **Finalist**, Qualcomm Edge AI Hackathon & Israeli-Indian Hackathon
-- ⚡ **Currently:** Building intelligent agents with LangGraph and crafting GSAP-powered 3D web experiences.
+- ⚡ **Currently:** Building intelligent solutions and crafting GSAP-powered 3D web experiences.
 
 <p align="center">
   <img src="./assets/divider.svg" width="100%" height="6" alt="" />
@@ -134,14 +134,13 @@ I am a **Software & AI Engineer** with a deep passion for building high-performa
 <p align="center">
   <img src="./assets/icons/si-js.svg" width="48" height="48" title="JavaScript" alt="JavaScript" /> &nbsp;
   <img src="./assets/icons/si-ts.svg" width="48" height="48" title="TypeScript" alt="TypeScript" /> &nbsp;
-  <img src="./assets/icons/si-php.svg" width="48" height="48" title="PHP" alt="PHP" /> &nbsp;
   <img src="./assets/icons/si-python.svg" width="48" height="48" title="Python" alt="Python" /> &nbsp;
   <img src="./assets/icons/si-solidity.svg" width="48" height="48" title="Solidity" alt="Solidity" /> &nbsp;
   <img src="./assets/icons/si-react.svg" width="48" height="48" title="React" alt="React" /> &nbsp;
   <img src="./assets/icons/si-nextjs.svg" width="48" height="48" title="Next.js" alt="Next.js" /> &nbsp;
   <img src="./assets/icons/si-nodejs.svg" width="48" height="48" title="Node.js" alt="Node.js" /> &nbsp;
   <img src="./assets/icons/si-express.svg" width="48" height="48" title="Express.js" alt="Express.js" /> &nbsp;
-  <img src="./assets/icons/si-laravel.svg" width="48" height="48" title="Laravel" alt="Laravel" />
+  
 </p>
 
 <p align="center">
@@ -170,23 +169,19 @@ I am a **Software & AI Engineer** with a deep passion for building high-performa
   <img src="./assets/icons/shadcnui.svg" width="48" height="48" title="Shadcn UI" alt="Shadcn UI" /> &nbsp;
   <img src="./assets/icons/motion.png" width="48" height="48" title="Motion" alt="Motion" /> &nbsp;
   <img src="./assets/icons/aceternity.png" width="48" height="48" title="Aceternity UI" alt="Aceternity UI" /> &nbsp;
-  <img src="./assets/icons/cpanel.svg" width="48" height="48" title="cPanel" alt="cPanel" /> &nbsp;
   <img src="./assets/icons/ganache.svg" width="40" height="48" title="Ganache" alt="Ganache" /> &nbsp;
   <img src="./assets/icons/ipfs.svg" width="48" height="48" title="IPFS" alt="IPFS" />
 </p>
 
 <p align="center">
   <img src="./assets/icons/jira.svg" width="48" height="48" title="Jira" alt="Jira" /> &nbsp;
-  <img src="./assets/icons/clickup.svg" width="48" height="48" title="ClickUp" alt="ClickUp" /> &nbsp;
   <img src="./assets/icons/slack.png" width="48" height="48" title="Slack" alt="Slack" /> &nbsp;
-  <img src="./assets/icons/rocketdotchat.svg" width="48" height="48" title="Rocket.Chat" alt="Rocket.Chat" /> &nbsp;
   <img src="./assets/icons/claude.svg" width="48" height="48" title="Claude Code" alt="Claude Code" /> &nbsp;
   <img src="./assets/icons/openclaw.svg" width="48" height="48" title="OpenClaw" alt="OpenClaw" />
 </p>
 
 <p align="center">
   <img src="./assets/icons/githubactions.svg" width="48" height="48" title="CI/CD" alt="CI/CD" /> &nbsp;
-  <img src="./assets/icons/pm2.svg" width="48" height="48" title="PM2" alt="PM2" /> &nbsp;
   <img src="./assets/icons/ec2.svg" width="48" height="48" title="AWS EC2" alt="AWS EC2" /> &nbsp;
   <img src="./assets/icons/route53.svg" width="48" height="48" title="AWS Route 53" alt="AWS Route 53" /> &nbsp;
   <img src="./assets/icons/framer.svg" width="48" height="48" title="Framer" alt="Framer" /> &nbsp;
