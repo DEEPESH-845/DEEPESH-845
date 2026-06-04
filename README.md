@@ -206,7 +206,7 @@ I am a **Software & AI Engineer** with a deep passion for building high-performa
 
 <div align="center">
   <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=DEEPESH-845&show_icons=true&theme=radical&bg_color=0D1117&border_color=00ff7f&title_color=00ff7f&text_color=E6EDF3" height="195" alt="GitHub Stats" />
-  <img src="https://streak-stats.demolab.com/?user=DEEPESH-845&theme=radical&background=0D1117&border=00ff7f&stroke=00ff7f&ring=00ff7f&fire=00ff7f&currStreakLabel=00ff7f&sideLabels=E6EDF3&dates=E6EDF3&currStreakNum=E6EDF3&sideNums=E6EDF3" height="195" alt="GitHub Streak" />
+  <img src="https://streak-stats.vercel.app/?user=DEEPESH-845&theme=radical&background=0D1117&border=00ff7f&stroke=00ff7f&ring=00ff7f&fire=00ff7f&currStreakLabel=00ff7f&sideLabels=E6EDF3&dates=E6EDF3&currStreakNum=E6EDF3&sideNums=E6EDF3" height="195" alt="GitHub Streak" />
   
   <br/>
  
