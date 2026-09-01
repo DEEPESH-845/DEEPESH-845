@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 210" width="1200" height="210" role="img" aria-label="DragVerse pipeline: a phone capture becomes a simulation-ready digital twin, a reinforcement-learning policy is trained in Unity ML-Agents with PPO, exported to ONNX and quantised to INT8 through Qualcomm AI Hub, then run in real time on an Arduino UNO Q Hexagon NPU driving a physical robot.">
+  <title>DragVerse — capture to deployment, end to end</title>
+  <defs>
+    <clipPath id="cp"><rect width="1200" height="210" rx="16"/></clipPath>
+    <marker id="pa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#3A4351"/></marker>
+  </defs>
+  <g clip-path="url(#cp)">
+    <rect width="1200" height="210" fill="#0A0C10"/>
+    <text x="60" y="42" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" letter-spacing="3.2" fill="#5D6675">DRAGVERSE · PHONE TO PHYSICAL ROBOT</text>
+
+    <g font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" text-anchor="middle">
+      <g><rect x="60" y="72" width="180" height="52" rx="10" fill="#111419" stroke="#242B36"/>
+        <text x="150" y="103" font-size="13" letter-spacing="1.6" fill="#E7ECF3">PHONE SCAN</text>
+        <text x="150" y="146" font-size="10.5" letter-spacing="1.2" fill="#5D6675">3D CAPTURE</text></g>
+      <g><rect x="285" y="72" width="180" height="52" rx="10" fill="#111419" stroke="#242B36"/>
+        <text x="375" y="103" font-size="13" letter-spacing="1.6" fill="#E7ECF3">DIGITAL TWIN</text>
+        <text x="375" y="146" font-size="10.5" letter-spacing="1.2" fill="#5D6675">UNITY SIM</text></g>
+      <g><rect x="510" y="72" width="180" height="52" rx="10" fill="#111419" stroke="#242B36"/>
+        <text x="600" y="103" font-size="13" letter-spacing="1.6" fill="#E7ECF3">RL POLICY</text>
+        <text x="600" y="146" font-size="10.5" letter-spacing="1.2" fill="#5D6675">ML-AGENTS · PPO</text></g>
+      <g><rect x="735" y="72" width="180" height="52" rx="10" fill="#111419" stroke="#242B36"/>
+        <text x="825" y="103" font-size="13" letter-spacing="1.6" fill="#E7ECF3">ONNX · INT8</text>
+        <text x="825" y="146" font-size="10.5" letter-spacing="1.2" fill="#5D6675">QUALCOMM AI HUB</text></g>
+      <g><rect x="960" y="72" width="180" height="52" rx="10" fill="#17110B" stroke="#FF7A1A" stroke-opacity="0.45"/>
+        <text x="1050" y="103" font-size="13" letter-spacing="1.6" fill="#FF9D4D">REAL ROBOT</text>
+        <text x="1050" y="146" font-size="10.5" letter-spacing="1.2" fill="#5D6675">UNO Q · HEXAGON NPU</text></g>
+    </g>
+
+    <g stroke="#3A4351" stroke-width="1.4" fill="none" marker-end="url(#pa)">
+      <line x1="248" y1="98" x2="277" y2="98"/><line x1="473" y1="98" x2="502" y2="98"/>
+      <line x1="698" y1="98" x2="727" y2="98"/><line x1="923" y1="98" x2="952" y2="98"/>
+    </g>
+    <circle r="3.5" fill="#FF7A1A">
+      <animateMotion dur="6s" repeatCount="indefinite" path="M150 98 H1050"/>
+      <animate attributeName="fill-opacity" values="0;1;1;0" keyTimes="0;0.08;0.92;1" dur="6s" repeatCount="indefinite"/>
+    </circle>
+
+    <text x="600" y="184" text-anchor="middle" font-family="ui-sans-serif,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="14.5" fill="#8B95A5">Built by five people in a two-day window. Won overall.</text>
+    <rect x="0.5" y="0.5" width="1199" height="209" rx="16" fill="none" stroke="#242B36"/>
+  </g>
+</svg>

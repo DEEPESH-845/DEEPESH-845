@@ -1,35 +1,30 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" width="1200" height="120" preserveAspectRatio="xMidYMid slice">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 180" width="1200" height="180" role="img" aria-label="Make it real, then make it checkable. Deepesh Kakkar.">
+  <title>Closing frame</title>
   <defs>
-    <pattern id="ftiles" x="-10" y="-10" width="90" height="90" patternUnits="userSpaceOnUse">
-      <rect x="14" y="14" width="62" height="62" rx="14" ry="14" fill="#00ff7f" fill-opacity="0.04" stroke="#00ff7f" stroke-opacity="0.08" stroke-width="1"/>
-    </pattern>
-
-    <linearGradient id="ffade" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#0D1117" stop-opacity="1"/>
-      <stop offset="12%" stop-color="#0D1117" stop-opacity="0"/>
-      <stop offset="88%" stop-color="#0D1117" stop-opacity="0"/>
-      <stop offset="100%" stop-color="#0D1117" stop-opacity="1"/>
+    <clipPath id="c5"><rect width="1200" height="180" rx="16"/></clipPath>
+    <linearGradient id="hair" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FF7A1A" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#FF7A1A" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#FF7A1A" stop-opacity="0"/>
     </linearGradient>
-
-    <radialGradient id="fglow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#00ff7f" stop-opacity="0.15"/>
-      <stop offset="100%" stop-color="#00ff7f" stop-opacity="0"/>
-    </radialGradient>
   </defs>
+  <g clip-path="url(#c5)">
+    <rect width="1200" height="180" fill="#0A0C10"/>
+    <rect x="200" y="0" width="800" height="2" fill="url(#hair)"/>
 
-  <rect width="1200" height="120" fill="#0D1117"/>
-  <rect width="1200" height="120" fill="url(#ftiles)"/>
+    <g transform="translate(600 74)">
+      <circle r="30" fill="none" stroke="#242B36"/>
+      <circle r="19" fill="none" stroke="#FF7A1A" stroke-opacity="0.3"/>
+      <line x1="-38" y1="0" x2="-32" y2="0" stroke="#3A4351"/>
+      <line x1="38" y1="0" x2="32" y2="0" stroke="#3A4351"/>
+      <line x1="0" y1="-38" x2="0" y2="-32" stroke="#3A4351"/>
+      <line x1="0" y1="38" x2="0" y2="32" stroke="#3A4351"/>
+      <circle r="3" fill="#FF7A1A">
+        <animate attributeName="fill-opacity" values="1;0.2;1" dur="2.6s" repeatCount="indefinite"/>
+      </circle>
+    </g>
 
-  <circle cx="600" cy="60" r="80" fill="#00ff7f" fill-opacity="0.08">
-    <animate attributeName="r" values="80;110;80" dur="6s" repeatCount="indefinite"/>
-    <animate attributeName="fill-opacity" values="0.08;0.03;0.08" dur="6s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect width="1200" height="120" fill="url(#fglow)"/>
-  <rect width="1200" height="120" fill="url(#ffade)"/>
-
-  <line x1="500" y1="60" x2="700" y2="60" stroke="#00ff7f" stroke-width="1.5" stroke-opacity="0.5" stroke-linecap="round"/>
-  <circle cx="600" cy="60" r="3" fill="#00ff7f">
-    <animate attributeName="fill-opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
-  </circle>
+    <text x="600" y="140" text-anchor="middle" font-family="ui-sans-serif,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="22" font-weight="600" letter-spacing="0.5" fill="#E7ECF3">Make it real. Then make it checkable.</text>
+    <rect x="0.5" y="0.5" width="1199" height="179" rx="16" fill="none" stroke="#242B36"/>
+  </g>
 </svg>

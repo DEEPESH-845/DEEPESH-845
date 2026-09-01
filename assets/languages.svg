@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 236" width="1200" height="236" role="img" aria-label="Code written, by language: TypeScript 46.9 percent, JavaScript 19.2 percent, Python 14.9 percent, Rust 7.1 percent, CSS 3.2 percent, Jupyter Notebook 3.1 percent, Dart 2.9 percent, Other 2.8 percent.">
+<title>Code written, by language</title>
+<defs><clipPath id="cl"><rect width="1200" height="236" rx="16"/></clipPath><clipPath id="bar"><rect x="92" y="104" width="1016" height="26" rx="6"/></clipPath></defs>
+<g clip-path="url(#cl)"><rect width="1200" height="236" fill="#0A0C10"/>
+<text x="92" y="48" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" letter-spacing="3.2" fill="#5D6675">CODE WRITTEN · PUBLIC REPOSITORIES</text>
+<text x="92" y="82" font-family="ui-sans-serif,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="26" font-weight="700" fill="#E7ECF3">8.0 MB<tspan font-size="17" font-weight="400" fill="#8B95A5"> of source across 7 languages</tspan></text>
+<g clip-path="url(#bar)">
+<rect x="92.0" y="104" width="476.4" height="26" fill="#FF7A1A"/>
+<rect x="568.4" y="104" width="194.9" height="26" fill="#DB6A1C"/>
+<rect x="763.4" y="104" width="151.8" height="26" fill="#B7591C"/>
+<rect x="915.2" y="104" width="71.9" height="26" fill="#94491A"/>
+<rect x="987.1" y="104" width="32.0" height="26" fill="#733A17"/>
+<rect x="1019.1" y="104" width="31.2" height="26" fill="#553019"/>
+<rect x="1050.3" y="104" width="29.4" height="26" fill="#3B2A1E"/>
+<rect x="1079.6" y="104" width="28.4" height="26" fill="#2A2E36"/>
+</g>
+<rect x="92" y="159" width="10" height="10" rx="2" fill="#FF7A1A"/><text x="110" y="168" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12.5" fill="#B7C0CD">TypeScript<tspan fill="#5D6675"> 46.9%</tspan></text>
+<rect x="346" y="159" width="10" height="10" rx="2" fill="#DB6A1C"/><text x="364" y="168" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12.5" fill="#B7C0CD">JavaScript<tspan fill="#5D6675"> 19.2%</tspan></text>
+<rect x="600" y="159" width="10" height="10" rx="2" fill="#B7591C"/><text x="618" y="168" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12.5" fill="#B7C0CD">Python<tspan fill="#5D6675"> 14.9%</tspan></text>
+<rect x="854" y="159" width="10" height="10" rx="2" fill="#94491A"/><text x="872" y="168" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12.5" fill="#B7C0CD">Rust<tspan fill="#5D6675"> 7.1%</tspan></text>
+<rect x="92" y="189" width="10" height="10" rx="2" fill="#733A17"/><text x="110" y="198" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12.5" fill="#B7C0CD">CSS<tspan fill="#5D6675"> 3.2%</tspan></text>
+<rect x="346" y="189" width="10" height="10" rx="2" fill="#553019"/><text x="364" y="198" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12.5" fill="#B7C0CD">Jupyter Notebook<tspan fill="#5D6675"> 3.1%</tspan></text>
+<rect x="600" y="189" width="10" height="10" rx="2" fill="#3B2A1E"/><text x="618" y="198" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12.5" fill="#B7C0CD">Dart<tspan fill="#5D6675"> 2.9%</tspan></text>
+<rect x="854" y="189" width="10" height="10" rx="2" fill="#2A2E36"/><text x="872" y="198" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12.5" fill="#B7C0CD">Other<tspan fill="#5D6675"> 2.8%</tspan></text>
+<rect x="0.5" y="0.5" width="1199" height="235" rx="16" fill="none" stroke="#242B36"/></g></svg>

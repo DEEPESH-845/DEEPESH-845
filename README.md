@@ -1,233 +1,154 @@
+<!-- ══════════════════ HERO ══════════════════ -->
 <div align="center">
 
-<!-- Banner -->
-<img src="./assets/banner.svg" alt="Deepesh Kakkar" />
+<a href="https://deepesh.qzz.io/"><img src="./assets/hero.svg" width="100%" alt="Deepesh Kakkar — backend and AI systems engineer. I build systems whose numbers you can check. Previously Qualcomm, Halliburton, Outlier.ai." /></a>
 
-<!-- Typing headline -->
-<a href="https://github.com/DEEPESH-845">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&color=00FF7F&center=true&vCenter=true&width=800&height=50&lines=Turning+Complex+Ideas+Into+Production+Systems;Architecting+Scalable+Intelligence;Building+High-Performance+Web+Applications&pause=1000&duration=11000" alt="typing headline" />
-</a>
-
-<br/>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Software%20Engineer-1F2937?style=for-the-badge&labelColor=0D1117&border=00FF7F" alt="Software Engineer" />
-  <img src="https://img.shields.io/badge/Frontend%20Engineer-1F2937?style=for-the-badge&labelColor=0D1117&border=00FF7F" alt="Frontend Engineer" />
-  <img src="https://img.shields.io/badge/AI%20Engineer-1F2937?style=for-the-badge&labelColor=0D1117&border=00FF7F" alt="AI Engineer" />
-  <img src="./assets/spacer.svg" width="36" height="28" alt="" />
-</p>
-
-<!-- Socials -->
-<p align="center">
-  <a href="https://www.linkedin.com/in/deepesh-kakkar/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-  <a href="mailto:deepeshkakkar.work@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
-  <a href="https://deepesh.qzz.io/"><img src="https://img.shields.io/badge/Portfolio-00ff7f?style=for-the-badge&logo=vercel&logoColor=0D1117" alt="Portfolio" /></a>
-  <a href="https://github.com/DEEPESH-845"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
-</p>
-
-<img src="https://komarev.com/ghpvc/?username=DEEPESH-845&color=00ff7f&style=for-the-badge&label=Profile+Views" alt="profile views" />
+**[Portfolio](https://deepesh.qzz.io/)**&nbsp; · &nbsp;**[LinkedIn](https://www.linkedin.com/in/deepesh-kakkar/)**&nbsp; · &nbsp;**[Email](mailto:deepeshkakkar.work@gmail.com)**&nbsp; · &nbsp;**[Repositories](https://github.com/DEEPESH-845?tab=repositories)**
 
 </div>
 
-<p align="center">
-  <img src="./assets/divider.svg" width="100%" height="6" alt="" />
-</p>
+I build backend and AI systems — Edge AI inference, multi-agent pipelines, and the production
+services around them. B.E. Electronics &amp; Computers, Thapar Institute, class of 2027.
 
-<!-- Animated section heading: About -->
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&color=00FF7F&center=true&vCenter=true&width=800&height=50&lines=About+Me&pause=1000&duration=11000" alt="About Me" />
-</p>
+---
 
-I am a **Software & AI Engineer** with a deep passion for building high-performance Next.js applications, decentralized Web3 protocols, and distributed AI telemetry systems. I bridge the gap between stunning frontend aesthetics and robust, scalable AI backends. 
+<!-- ══════════════════ 01 · PROOF ══════════════════ -->
+**`01 / PROOF`**
 
-- 🎓 **Education:** B.E. Electronics and Computers @ Thapar Institute of Engineering and Technology *(2027)*
-- 🏆 **Achievements:** 
-  - 🏅 **India Book of Records Holder** *(Fastest Memory Practitioner)*
-  - 🥇 **Winner**, Most Innovative Hack @ HackSpire 2025
-  - 🌟 **Top Submission Recognition** @ CodeCircuit.ai
-  - 🚀 **Finalist**, Qualcomm Edge AI Hackathon & Israeli-Indian Hackathon
-- ⚡ **Currently:** Building intelligent solutions and crafting GSAP-powered 3D web experiences.
+<img src="./assets/impact.svg" width="100%" alt="Global Winner, Qualcomm Snapdragon Multiverse Hackathon 2026 — top 8 of thousands. National Runner-Up, PSB Hackathon, Government of India — ₹3,00,000, August 2026. 89.2% Edge AI inference accuracy at 2,671+ images/hour on a Qualcomm NPU. Deploy time cut from 18 to 6 minutes at Halliburton, sustaining 5–10 releases a week." />
 
-<p align="center">
-  <img src="./assets/divider.svg" width="100%" height="6" alt="" />
-</p>
+---
 
-<!-- Animated section heading: Experience -->
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&color=00FF7F&center=true&vCenter=true&width=800&height=50&lines=Experience&pause=1000&duration=11000" alt="Experience" />
-</p>
+<!-- ══════════════════ 02 · SELECTED WORK ══════════════════ -->
+**`02 / SELECTED WORK`**
 
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>🏢 Frontend Developer</h3>
-      <b>Outlier.ai</b> <i>(July 2025 – Dec 2025)</i><br/>
-      <br/>
-      <ul>
-        <li>Engineered high-performance <b>Next.js</b> applications.</li>
-        <li>Architected scalable solutions using <b>TypeScript</b> & TailwindCSS.</li>
-        <li>Implemented fluid animations with <b>GSAP</b> and optimized rendering performance.</li>
-      </ul>
-    </td>
-    <td width="50%" valign="top">
-      <h3>🛠️ SDE Intern</h3>
-      <b>Halliburton</b> <i>(May 2025 – July 2025)</i><br/>
-      <br/>
-      <ul>
-        <li>Developed scalable web apps with <b>Next.js</b> & <b>TypeScript</b>.</li>
-        <li>Built robust CI/CD pipelines & integrated third-party APIs.</li>
-        <li>Implemented SSR and Dynamic Routing for high-speed Vercel deployments.</li>
-      </ul>
-    </td>
-  </tr>
-</table>
+### `01` &nbsp;DRAGVERSE &nbsp;—&nbsp; *Global Winner, Snapdragon Multiverse Hackathon 2026*
 
-**🚀 Head of Technology** @ **Saturnalia TIET** *(Sep 2025 – Nov 2025)*
-> Architected a robust event-tech platform. Spearheaded infrastructure leadership, scaling CI/CD, security protocols, and observability for thousands of concurrent users.
+A phone scan becomes a simulation-ready digital twin, a PPO policy learns to drive it, and that
+same policy — exported to ONNX and quantised to INT8 — runs in real time on a Hexagon NPU inside
+a physical robot, with STM32 motor control and a hardware emergency stop.
 
-<p align="center">
-  <img src="./assets/divider.svg" width="100%" height="6" alt="" />
-</p>
+<img src="./assets/pipeline.svg" width="100%" alt="DragVerse pipeline: phone scan, digital twin in Unity, RL policy trained with ML-Agents PPO, exported to ONNX INT8 via Qualcomm AI Hub, deployed to a real robot on an Arduino UNO Q Hexagon NPU." />
 
-<!-- Animated section heading: Featured Projects -->
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&color=00FF7F&center=true&vCenter=true&width=800&height=50&lines=Featured+Projects&pause=1000&duration=11000" alt="Featured Projects" />
-</p>
+`Unity ML-Agents` `PPO` `ONNX INT8` `Qualcomm AI Hub` `Arduino UNO Q` `STM32`
 
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/DEEPESH-845/Guardiant">🛡️ Guardiant</a></h3>
-      <p>Decentralized Web3 security protocol for protecting digital assets using ML anomaly detection.</p>
-      <b>Tech:</b> <code>Next.js</code> <code>Solidity</code> <code>PyTorch</code> <code>NetworkX</code>
-    </td>
-    <td width="50%" valign="top">
-      <h3><a href="https://aetheris-xi.vercel.app/">🌐 AETHERIS</a></h3>
-      <p>Distributed AI telemetry and threat-analysis platform running real-time monitoring streams.</p>
-      <b>Tech:</b> <code>Next.js</code> <code>FastAPI</code> <code>LangGraph</code> <code>WebSockets</code>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3><a href="https://kinetic-keys.vercel.app/">🎹 Kinetic Keys</a></h3>
-      <p>A highly interactive 3D keyboard customization platform blending e-commerce with rich WebGL.</p>
-      <b>Tech:</b> <code>Three.js</code> <code>GSAP</code> <code>Stripe</code> <code>TypeScript</code>
-    </td>
-    <td width="50%" valign="top">
-      <h3><a href="https://deepesh-845.github.io/Periodic-Table/">🧪 3D Periodic Table</a></h3>
-      <p>Immersive, interactive educational visualization platform mapping atomic elements in 3D space.</p>
-      <b>Tech:</b> <code>Three.js</code> <code>JavaScript</code> <code>HTML</code> <code>CSS</code>
-    </td>
-  </tr>
-</table>
+**[Live demo →](https://drag-verse-beta.vercel.app/)**
 
-<p align="center">
-  <img src="./assets/divider.svg" width="100%" height="6" alt="" />
-</p>
+<br />
 
-<!-- Animated section heading: Tech -->
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&color=00FF7F&center=true&vCenter=true&width=800&height=50&lines=Tech+Arsenal&pause=1000&duration=11000" alt="Tech Arsenal" />
-</p>
+### `02` &nbsp;SOLARSAGE &nbsp;—&nbsp; *Global Finalist, Qualcomm Edge AI Hackathon 2025*
 
-<!-- Using EXACTLY all 48 icons from the assets folder -->
-<p align="center">
-  <img src="./assets/icons/si-js.svg" width="48" height="48" title="JavaScript" alt="JavaScript" /> &nbsp;
-  <img src="./assets/icons/si-ts.svg" width="48" height="48" title="TypeScript" alt="TypeScript" /> &nbsp;
-  <img src="./assets/icons/si-python.svg" width="48" height="48" title="Python" alt="Python" /> &nbsp;
-  <img src="./assets/icons/si-solidity.svg" width="48" height="48" title="Solidity" alt="Solidity" /> &nbsp;
-  <img src="./assets/icons/si-react.svg" width="48" height="48" title="React" alt="React" /> &nbsp;
-  <img src="./assets/icons/si-nextjs.svg" width="48" height="48" title="Next.js" alt="Next.js" /> &nbsp;
-  <img src="./assets/icons/si-nodejs.svg" width="48" height="48" title="Node.js" alt="Node.js" /> &nbsp;
-  <img src="./assets/icons/si-express.svg" width="48" height="48" title="Express.js" alt="Express.js" /> &nbsp;
-  
-</p>
+Multi-agent computer vision that decides whether cleaning a solar panel pays for itself.
+**89.2%** inference accuracy at **2,671+ images/hour** on-device, with **87.3%** decision
+confidence — the pipeline Qualcomm later invited me to productionise with their team.
 
-<p align="center">
-  <img src="./assets/icons/si-tailwind.svg" width="48" height="48" title="Tailwind CSS" alt="Tailwind CSS" /> &nbsp;
-  <img src="./assets/icons/si-materialui.svg" width="48" height="48" title="Material UI" alt="Material UI" /> &nbsp;
-  <img src="./assets/icons/si-docker.svg" width="48" height="48" title="Docker" alt="Docker" /> &nbsp;
-  <img src="./assets/icons/si-cloudflare.svg" width="48" height="48" title="Cloudflare" alt="Cloudflare" /> &nbsp;
-  <img src="./assets/icons/si-nginx.svg" width="48" height="48" title="Nginx" alt="Nginx" /> &nbsp;
-  <img src="./assets/icons/si-aws.svg" width="48" height="48" title="AWS" alt="AWS" /> &nbsp;
-  <img src="./assets/icons/si-githubactions.svg" width="48" height="48" title="GitHub Actions" alt="GitHub Actions" /> &nbsp;
-  <img src="./assets/icons/si-postgres.svg" width="48" height="48" title="PostgreSQL" alt="PostgreSQL" />
-</p>
+`CrewAI` `PyTorch` `FastAPI` `Qualcomm NPU` `Llama`
 
-<p align="center">
-  <img src="./assets/icons/si-mysql.svg" width="48" height="48" title="MySQL" alt="MySQL" /> &nbsp;
-  <img src="./assets/icons/si-mongodb.svg" width="48" height="48" title="MongoDB" alt="MongoDB" /> &nbsp;
-  <img src="./assets/icons/si-git.svg" width="48" height="48" title="Git" alt="Git" /> &nbsp;
-  <img src="./assets/icons/si-github.svg" width="48" height="48" title="GitHub" alt="GitHub" /> &nbsp;
-  <img src="./assets/icons/si-linux.svg" width="48" height="48" title="Linux" alt="Linux" /> &nbsp;
-  <img src="./assets/icons/si-vscode.svg" width="48" height="48" title="VS Code" alt="VS Code" /> &nbsp;
-  <img src="./assets/icons/si-postman.svg" width="48" height="48" title="Postman" alt="Postman" /> &nbsp;
-  <img src="./assets/icons/si-discord.svg" width="48" height="48" title="Discord" alt="Discord" />
-</p>
+**[Repository →](https://github.com/DEEPESH-845/SolarSage.Ai)**
 
-<p align="center">
-  <img src="./assets/icons/shadcnui.svg" width="48" height="48" title="Shadcn UI" alt="Shadcn UI" /> &nbsp;
-  <img src="./assets/icons/motion.png" width="48" height="48" title="Motion" alt="Motion" /> &nbsp;
-  <img src="./assets/icons/aceternity.png" width="48" height="48" title="Aceternity UI" alt="Aceternity UI" /> &nbsp;
-  <img src="./assets/icons/ganache.svg" width="40" height="48" title="Ganache" alt="Ganache" /> &nbsp;
-  <img src="./assets/icons/ipfs.svg" width="48" height="48" title="IPFS" alt="IPFS" />
-</p>
+<br />
 
-<p align="center">
-  <img src="./assets/icons/jira.svg" width="48" height="48" title="Jira" alt="Jira" /> &nbsp;
-  <img src="./assets/icons/slack.png" width="48" height="48" title="Slack" alt="Slack" /> &nbsp;
-  <img src="./assets/icons/claude.svg" width="48" height="48" title="Claude Code" alt="Claude Code" /> &nbsp;
-  <img src="./assets/icons/openclaw.svg" width="48" height="48" title="OpenClaw" alt="OpenClaw" />
-</p>
+### `03` &nbsp;AETHERIS &nbsp;—&nbsp; *autonomous cyber deception*
 
-<p align="center">
-  <img src="./assets/icons/githubactions.svg" width="48" height="48" title="CI/CD" alt="CI/CD" /> &nbsp;
-  <img src="./assets/icons/ec2.svg" width="48" height="48" title="AWS EC2" alt="AWS EC2" /> &nbsp;
-  <img src="./assets/icons/route53.svg" width="48" height="48" title="AWS Route 53" alt="AWS Route 53" /> &nbsp;
-  <img src="./assets/icons/framer.svg" width="48" height="48" title="Framer" alt="Framer" /> &nbsp;
-  <img src="./assets/icons/hostinger.svg" width="48" height="48" title="Hostinger" alt="Hostinger" />
-</p>
+Attackers get routed into an AI-generated sandbox replica before production is touched.
+LangGraph reasoning over live WebSocket telemetry, MITRE ATT&CK enrichment, automated response.
 
-<p align="center">
-  <img src="./assets/icons/ethereum.svg" width="48" height="48" title="Smart Contracts" alt="Smart Contracts" /> &nbsp;
-  <img src="./assets/icons/opensea.svg" width="48" height="48" title="NFTs" alt="NFTs" /> &nbsp;
-  <img src="./assets/icons/ethers.svg" width="72" height="48" title="Ethers.js" alt="Ethers.js" /> &nbsp;
-  <img src="./assets/icons/web3dotjs.svg" width="48" height="48" title="Web3.js" alt="Web3.js" />
-</p>
+`Next.js` `FastAPI` `LangGraph` `WebSockets` `Docker`
 
-<p align="center">
-  <img src="./assets/divider.svg" width="100%" height="6" alt="" />
-</p>
+**[Live →](https://aetheris-xi.vercel.app)**&nbsp; · &nbsp;[Source](https://github.com/DEEPESH-845/Aetheris)
 
-<!-- Animated section heading: GitHub Analytics -->
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&color=00FF7F&center=true&vCenter=true&width=500&height=50&lines=GitHub+Analytics&pause=1000&duration=11000" alt="GitHub Analytics" />
-</p>
+<br />
 
+### `04` &nbsp;CALNINO &nbsp;—&nbsp; *70–100 weekly active users*
+
+A zero-hydration financial engine: 10+ deterministic tools for mortgage, investment and
+retirement planning, with scenario simulation. Nothing about your money leaves the browser.
+
+`Astro` `TypeScript` `Tailwind` `Cloudflare`
+
+**[calnino.com →](https://www.calnino.com)**&nbsp; · &nbsp;<sub>private repository</sub>
+
+<br />
+
+### `05` &nbsp;ZEROCLOUD &nbsp;—&nbsp; *what can this laptop actually run?*
+
+A Rust CLI that measures your machine in about two seconds, then predicts decode throughput,
+time-to-first-token and maximum context across 26 local models. Under 5 MB, no telemetry —
+and every printed number is recomputed from a clean clone by `zc gate`.
+
+`Rust` `Metal + CPU backends` `Apache-2.0`
+
+**[Install →](https://github.com/DEEPESH-845/ZeroCloud)**
+
+<details>
+<summary><b><code>+ 6 more builds</code></b></summary>
+
+<br />
+
+| Build | One line | Stack |
+|---|---|---|
+| **[Guardiant](https://github.com/DEEPESH-845/Guardiant)** | Wallets that self-destruct before a rug pull completes — graph analytics cut fraud-detection latency 85% | Solidity · PyTorch · NetworkX |
+| **[Nivaaran](https://nivaaran-pi.vercel.app)** | Runs every check EPFO will run *before* you file, and names who has to fix what | Next.js 16 · TypeScript |
+| **[CrisisLink](https://github.com/DEEPESH-845/CrisisLink)** | AI triage for India's 112 network — classifies multilingual calls in under 3s, dispatches the nearest unit | Python · Gemini · Whisper |
+| **[Credify](https://github.com/DEEPESH-845/Credify)** | On-chain professional credentials — tamper-proof degrees and certifications | Solidity · OpenZeppelin · IPFS |
+| **[NeuroTrace](https://github.com/DEEPESH-845/NeuroTrace)** | On-device neurological monitoring through the 90-day post-stroke window | React Native · ONNX · Phi-3 |
+| **[Kinetic Keys](https://kinetic-keys.vercel.app/)** | 3D keyboard configurator with Stripe checkout — 35% faster render pipeline | Three.js · GSAP · Stripe |
+
+</details>
+
+---
+
+<!-- ══════════════════ 03 · STACK ══════════════════ -->
+**`03 / STACK`**
+
+<img src="./assets/stack.svg" width="100%" alt="Languages: C++, Java, Python, TypeScript, JavaScript, C, SQL. AI systems: LangGraph, CrewAI, RAG, PyTorch, ONNX, Edge AI, Qualcomm NPU, ML-Agents, scikit-learn. Backend: FastAPI, Node.js, Express, REST, WebSockets, tRPC, WebRTC. Frontend: React, Next.js, Astro, Tailwind, Three.js, GSAP, Framer Motion. Data: PostgreSQL, MySQL, MongoDB, Redis, DynamoDB, FAISS, Pinecone. Cloud and DevOps: AWS, Docker, Kubernetes, GitHub Actions, Vercel, Cloudflare." />
+
+---
+
+<!-- ══════════════════ 04 · JOURNEY ══════════════════ -->
+**`04 / JOURNEY`**
+
+<img src="./assets/timeline.svg" width="100%" alt="2026: Global Winner, Snapdragon Multiverse Hackathon, Qualcomm, July 2026; National Runner-Up, PSB Hackathon, Government of India, ₹3,00,000, August 2026. 2025: Frontend Developer at Outlier.ai, July to December; Head of Technology at Saturnalia TIET, September to November; Backend and Systems Engineer Intern at Qualcomm, June to August; Software Development Engineer Intern at Halliburton, May to July." />
+
+<sub>**Also** — Finalist, ISB Secure Bharat CyberSec 2026 · Winner, Most Innovative Hack, HackSpire 2025 ·
+Finalist, Indo-Israeli Hackathon 2025 · Top submission, CodeCircuit.ai · India Book of Records holder,
+Fastest Memory Practitioner</sub>
+
+---
+
+<!-- ══════════════════ 05 · HOW I WORK ══════════════════ -->
+**`05 / HOW I WORK`**
+
+<img src="./assets/loop.svg" width="100%" alt="The loop: claim, measure, compare against a baseline, ship — with a feedback path returning to claim. If it doesn't beat the dumbest baseline that would have worked, it isn't done. A field is either backed by evidence or it is absent." />
+
+---
+
+<!-- ══════════════════ 06 · NOW ══════════════════ -->
+**`06 / NOW`**
+
+<img src="./assets/terminal.svg" width="100%" alt="Terminal — whoami: deepesh, backend and AI systems engineer. Active: Kavach, a merchant-side trust layer for agentic commerce; ZeroCloud, local-LLM capability prediction in Rust. Principle: a number without a source is not a number." />
+
+`Open to`&nbsp; internship and new-grad conversations for 2027 &nbsp;<!-- edit as this changes -->
+
+---
+
+<!-- ══════════════════ 07 · ACTIVITY ══════════════════ -->
+<!-- contributions.svg + languages.svg are regenerated daily by .github/workflows/contributions.yml -->
+**`07 / ACTIVITY`**
+
+<img src="./assets/contributions.svg" width="100%" alt="Commit activity over the last twelve months." />
+
+<img src="./assets/languages.svg" width="100%" alt="Code written across public repositories, by language." />
+
+---
+
+<!-- ══════════════════ FOOTER ══════════════════ -->
 <div align="center">
-  <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=DEEPESH-845&show_icons=true&theme=radical&bg_color=0D1117&border_color=00ff7f&title_color=00ff7f&text_color=E6EDF3" height="195" alt="GitHub Stats" />
-  <img src="https://streak-stats.vercel.app/?user=DEEPESH-845&theme=radical&background=0D1117&border=00ff7f&stroke=00ff7f&ring=00ff7f&fire=00ff7f&currStreakLabel=00ff7f&sideLabels=E6EDF3&dates=E6EDF3&currStreakNum=E6EDF3&sideNums=E6EDF3" height="195" alt="GitHub Streak" />
-  
-  <br/>
- 
- <p align="center">
-  <img src="./assets/divider.svg" width="100%" height="6" alt="" />
-</p>
 
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&color=00FF7F&center=true&vCenter=true&width=800&height=50&lines=Contribution+Activity&pause=1000&duration=11000" alt="Contribution Activity" />
-</p>
-  
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=DEEPESH-845&bg_color=0D1117&color=00ff7f&line=00ff7f&point=E6EDF3&area=true&hide_border=true&custom_title=Contributions%20over%20time" alt="Activity Graph" width="100%" />
+<img src="./assets/footer.svg" width="100%" alt="Make it real. Then make it checkable." />
+
+**[Portfolio](https://deepesh.qzz.io/)**&nbsp; · &nbsp;**[LinkedIn](https://www.linkedin.com/in/deepesh-kakkar/)**&nbsp; · &nbsp;**[Email](mailto:deepeshkakkar.work@gmail.com)**&nbsp; · &nbsp;**[GitHub](https://github.com/DEEPESH-845)**
+
+<sub>© 2026 Deepesh Kakkar</sub>
+
 </div>
- 
-<br/>
-
-<p align="center">
-  <img src="./assets/divider.svg" width="100%" height="6" alt="" />
-</p>
-
-<!-- Footer -->
-<p align="center">
-  <img src="./assets/footer.svg" alt=""  width= "100%"/>
-</p>

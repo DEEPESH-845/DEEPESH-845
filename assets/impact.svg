@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 232" width="1200" height="232" role="img" aria-label="Proof: Global Winner of Qualcomm's Snapdragon Multiverse Hackathon 2026, top 8 of thousands. National Runner-Up at the PSB Hackathon, Government of India, 3,00,000 rupee prize, August 2026. 89.2 percent Edge AI inference accuracy at over 2,671 images per hour on a Qualcomm NPU. Deploy time cut from 18 minutes to 6 at Halliburton, sustaining 5 to 10 releases per week.">
+  <title>Verified outcomes</title>
+  <defs><clipPath id="ci"><rect width="1200" height="232" rx="16"/></clipPath></defs>
+  <g clip-path="url(#ci)">
+    <rect width="1200" height="232" fill="#0A0C10"/>
+    <text x="80" y="46" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" letter-spacing="3.2" fill="#5D6675">PROOF · EVERY LINE VERIFIABLE</text>
+    <line x1="80" y1="68" x2="1120" y2="68" stroke="#1B212A"/>
+    <g stroke="#1B212A"><line x1="320" y1="94" x2="320" y2="192"/><line x1="590" y1="94" x2="590" y2="192"/><line x1="860" y1="94" x2="860" y2="192"/></g>
+
+    <g font-family="ui-sans-serif,-apple-system,Segoe UI,Helvetica,Arial,sans-serif">
+      <text x="80" y="134" font-size="26" font-weight="700" fill="#FF7A1A">GLOBAL WINNER</text>
+      <text x="80" y="162" font-size="12.5" fill="#E7ECF3">Snapdragon Multiverse Hackathon 2026</text>
+      <text x="80" y="186" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10.5" letter-spacing="0.6" fill="#5D6675">QUALCOMM · TOP 8 OF THOUSANDS</text>
+
+      <text x="350" y="134" font-size="26" font-weight="700" fill="#E7ECF3">₹3,00,000</text>
+      <text x="350" y="162" font-size="12.5" fill="#E7ECF3">National Runner-Up · PSB Hackathon</text>
+      <text x="350" y="186" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10.5" letter-spacing="0.6" fill="#5D6675">GOVT. OF INDIA · AUG 2026</text>
+
+      <text x="620" y="134" font-size="26" font-weight="700" fill="#E7ECF3">89.2<tspan font-size="18">%</tspan></text>
+      <text x="620" y="162" font-size="12.5" fill="#E7ECF3">Edge AI inference accuracy</text>
+      <text x="620" y="186" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10.5" letter-spacing="0.6" fill="#5D6675">2,671+ IMG/HR ON QUALCOMM NPU</text>
+
+      <text x="890" y="134" font-size="26" font-weight="700" fill="#E7ECF3">18 <tspan fill="#FF7A1A">→</tspan> 6<tspan font-size="18" fill="#8B95A5"> min</tspan></text>
+      <text x="890" y="162" font-size="12.5" fill="#E7ECF3">Deploy time cut at Halliburton</text>
+      <text x="890" y="186" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10.5" letter-spacing="0.6" fill="#5D6675">5–10 RELEASES/WEEK SUSTAINED</text>
+    </g>
+    <rect x="0.5" y="0.5" width="1199" height="231" rx="16" fill="none" stroke="#242B36"/>
+  </g>
+</svg>
