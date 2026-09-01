@@ -119,7 +119,23 @@ Fastest Memory Practitioner</sub>
 <!-- ══════════════════ 05 · HOW I WORK ══════════════════ -->
 **`05 / HOW I WORK`**
 
-<img src="./assets/loop.svg" width="100%" alt="The loop: claim, measure, compare against a baseline, ship — with a feedback path returning to claim. If it doesn't beat the dumbest baseline that would have worked, it isn't done. A field is either backed by evidence or it is absent." />
+<img src="./assets/method.svg" width="100%" alt="How I work on AI systems, end to end: start from the deployment constraint, prototype to the fastest path to signal, evaluate on held-out and adversarial data, optimise by quantising, distilling and caching, then run on device under real latency and load — with evaluation feeding back into prototyping." />
+
+**`01 — THE DEPLOYMENT TARGET IS THE ARCHITECTURE`**<br>
+A fixed NPU memory budget doesn't make the problem smaller, it makes it a different problem.
+I design backwards from the device the model has to live on.
+
+**`02 — BUILD THE EVAL BEFORE THE MODEL`**<br>
+Anything you can't score, you can't improve. 89.2% only means something next to the held-out
+set it was measured on, and the adversarial cases that tried to break it.
+
+**`03 — THE MODEL IS 10% OF THE SYSTEM`**<br>
+Orchestration, latency budgets, failure paths and retries are what decide whether a
+multi-agent pipeline survives contact with production.
+
+**`04 — LATENCY IS A FEATURE`**<br>
+2,671 images an hour on-device, or it doesn't ship. Accuracy that arrives late is a research
+result, not a product.
 
 ---
 
@@ -133,10 +149,10 @@ Fastest Memory Practitioner</sub>
 ---
 
 <!-- ══════════════════ 07 · ACTIVITY ══════════════════ -->
-<!-- contributions.svg + languages.svg are regenerated daily by .github/workflows/contributions.yml -->
+<!-- activity.svg + languages.svg are regenerated daily by .github/workflows/contributions.yml -->
 **`07 / ACTIVITY`**
 
-<img src="./assets/contributions.svg" width="100%" alt="Commit activity over the last twelve months." />
+<img src="./assets/activity.svg" width="100%" alt="Commit volume over the last twelve months." />
 
 <img src="./assets/languages.svg" width="100%" alt="Code written across public repositories, by language." />
 

@@ -11,11 +11,9 @@ from datetime import date
 USER = os.environ.get("GH_USER", "DEEPESH-845")
 ASSETS = os.path.join(os.path.dirname(__file__), "..", "assets")
 
-BG, EMPTY, TEXT, MUTED, ACCENT, EDGE = "#0A0C10", "#141920", "#E7ECF3", "#5D6675", "#FF7A1A", "#242B36"
-SCALE = ["#141920", "#4A2A10", "#8A4614", "#C96517", "#FF7A1A"]
-CELL, GAP, PAD_L, TOP = 15, 4, 92, 108
+BG, TEXT, MUTED, ACCENT, EDGE = "#0A0C10", "#E7ECF3", "#5D6675", "#FF7A1A", "#242B36"
 QUERY = """{ user(login: "%s") { contributionsCollection { contributionCalendar {
-  totalContributions weeks { contributionDays { date contributionCount weekday } } } } } }"""
+  totalContributions weeks { contributionDays { date contributionCount } } } } } }"""
 
 
 def gh(*args):
@@ -27,55 +25,73 @@ def fetch():
     return json.loads(out)["data"]["user"]["contributionsCollection"]["contributionCalendar"]
 
 
-def bucket(n, peak):
-    if n == 0:
-        return 0
-    return min(4, 1 + int(3 * n / max(peak, 1)))
+def smooth(pts):
+    """Catmull-Rom through every point, emitted as cubic beziers."""
+    d = [f"M{pts[0][0]:.1f},{pts[0][1]:.1f}"]
+    for i in range(len(pts) - 1):
+        p0, p1, p2, p3 = pts[max(i - 1, 0)], pts[i], pts[i + 1], pts[min(i + 2, len(pts) - 1)]
+        c1 = (p1[0] + (p2[0] - p0[0]) / 6, p1[1] + (p2[1] - p0[1]) / 6)
+        c2 = (p2[0] - (p3[0] - p1[0]) / 6, p2[1] - (p3[1] - p1[1]) / 6)
+        d.append(f"C{c1[0]:.1f},{c1[1]:.1f} {c2[0]:.1f},{c2[1]:.1f} {p2[0]:.1f},{p2[1]:.1f}")
+    return " ".join(d)
 
 
 def render(cal):
-    weeks = cal["weeks"]
-    peak = max((d["contributionCount"] for w in weeks for d in w["contributionDays"]), default=1)
-    width, height = 1200, TOP + 7 * (CELL + GAP) + 46
-    p = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" width="{width}" height="{height}"'
-         f' role="img" aria-label="{cal["totalContributions"]} contributions by {USER} in the last year.">',
-         f'<title>{cal["totalContributions"]} contributions in the last year</title>',
-         f'<defs><clipPath id="cc"><rect width="{width}" height="{height}" rx="16"/></clipPath></defs>',
-         f'<g clip-path="url(#cc)"><rect width="{width}" height="{height}" fill="{BG}"/>',
-         f'<text x="{PAD_L}" y="48" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace"'
-         f' font-size="12" letter-spacing="3.2" fill="{MUTED}">COMMIT ACTIVITY · LAST 12 MONTHS</text>',
-         f'<text x="{PAD_L}" y="82" font-family="ui-sans-serif,-apple-system,Segoe UI,Helvetica,Arial,sans-serif"'
-         f' font-size="26" font-weight="700" fill="{TEXT}">{cal["totalContributions"]:,}'
-         f'<tspan font-size="17" font-weight="400" fill="#8B95A5"> contributions</tspan></text>']
-
+    """Commits per week over the last year, as an area graph."""
+    weeks = [(w["contributionDays"][0]["date"], sum(d["contributionCount"] for d in w["contributionDays"]))
+             for w in cal["weeks"]]
+    vals = [v for _, v in weeks]
+    peak = max(vals) or 1
+    W, H, X0, X1, Y0, Y1 = 1200, 306, 92, 1120, 112, 246
+    PW, PH = X1 - X0, Y1 - Y0
+    n = len(weeks)
+    pts = [(X0 + i * PW / (n - 1), Y1 - v / peak * PH) for i, v in enumerate(vals)]
+    line = smooth(pts)
     mono = 'font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace"'
-    seen, last_x = set(), -99
-    for i, w in enumerate(weeks):                                   # month ruler
-        d = date.fromisoformat(w["contributionDays"][0]["date"])
-        x = PAD_L + i * (CELL + GAP)
-        if d.month not in seen and d.day <= 7 and x - last_x > 52:
-            seen.add(d.month); last_x = x
-            p.append(f'<text x="{x}" y="{TOP - 10}" {mono} font-size="11" fill="{MUTED}">'
-                     f'{d.strftime("%b").upper()}</text>')
+    pk = vals.index(peak)
 
-    for row, lab in ((1, "MON"), (3, "WED"), (5, "FRI")):           # weekday ruler
-        p.append(f'<text x="{PAD_L - 14}" y="{TOP + row * (CELL + GAP) + 12}" text-anchor="end" {mono}'
-                 f' font-size="10" fill="#454D5A">{lab}</text>')
+    p = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img"'
+         f' aria-label="Commit volume over the last twelve months: {cal["totalContributions"]} contributions,'
+         f' peaking at {peak} in a single week.">',
+         f'<title>{cal["totalContributions"]} contributions in the last year</title>',
+         '<defs>',
+         f'<clipPath id="cc"><rect width="{W}" height="{H}" rx="16"/></clipPath>',
+         '<linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">'
+         f'<stop offset="0%" stop-color="{ACCENT}" stop-opacity="0.34"/>'
+         f'<stop offset="100%" stop-color="{ACCENT}" stop-opacity="0"/></linearGradient>',
+         '</defs>',
+         f'<g clip-path="url(#cc)"><rect width="{W}" height="{H}" fill="{BG}"/>',
+         f'<text x="{X0}" y="48" {mono} font-size="12" letter-spacing="3.2" fill="{MUTED}">'
+         'COMMIT VOLUME · LAST 12 MONTHS</text>',
+         f'<text x="{X0}" y="84" font-family="ui-sans-serif,-apple-system,Segoe UI,Helvetica,Arial,sans-serif"'
+         f' font-size="26" font-weight="700" fill="{TEXT}">{cal["totalContributions"]:,}'
+         f'<tspan font-size="17" font-weight="400" fill="#8B95A5"> contributions · peak {peak} in one week'
+         '</tspan></text>']
 
-    for i, w in enumerate(weeks):
-        for d in w["contributionDays"]:
-            n = d["contributionCount"]
-            x, y = PAD_L + i * (CELL + GAP), TOP + d["weekday"] * (CELL + GAP)
-            p.append(f'<rect x="{x}" y="{y}" width="{CELL}" height="{CELL}" rx="3"'
-                     f' fill="{SCALE[bucket(n, peak)]}"><title>{n} on {d["date"]}</title></rect>')
+    for f in (0, 0.5, 1):                                            # baseline grid
+        y = Y1 - f * PH
+        p.append(f'<line x1="{X0}" y1="{y:.1f}" x2="{X1}" y2="{y:.1f}" stroke="#1B212A"/>')
 
-    ly = TOP + 7 * (CELL + GAP) + 22
-    p.append(f'<text x="{PAD_L}" y="{ly + 11}" {mono} font-size="10.5" letter-spacing="1.4" fill="{MUTED}">LESS</text>')
-    for i, c in enumerate(SCALE):
-        p.append(f'<rect x="{PAD_L + 44 + i * 18}" y="{ly}" width="{CELL}" height="{CELL}" rx="3" fill="{c}"/>')
-    p.append(f'<text x="{PAD_L + 44 + 5 * 18 + 4}" y="{ly + 11}" {mono} font-size="10.5" letter-spacing="1.4"'
-             f' fill="{MUTED}">MORE</text>')
-    p.append(f'<rect x="0.5" y="0.5" width="{width - 1}" height="{height - 1}" rx="16" fill="none" stroke="{EDGE}"/>')
+    p.append(f'<path d="{line} L{X1:.1f},{Y1} L{X0:.1f},{Y1} Z" fill="url(#fade)"/>')
+    p.append(f'<path d="{line}" fill="none" stroke="{ACCENT}" stroke-width="2.2" stroke-linecap="round"'
+             f' stroke-linejoin="round" pathLength="1" stroke-dasharray="1" stroke-dashoffset="0">'
+             '<animate attributeName="stroke-dashoffset" from="1" to="0" dur="1.6s" fill="freeze"/></path>')
+
+    px, py = pts[pk]
+    p.append(f'<line x1="{px:.1f}" y1="{py:.1f}" x2="{px:.1f}" y2="{Y1}" stroke="{ACCENT}" stroke-opacity="0.35"'
+             ' stroke-dasharray="3 4"/>')
+    p.append(f'<circle cx="{px:.1f}" cy="{py:.1f}" r="4.5" fill="{BG}" stroke="{ACCENT}" stroke-width="2"/>')
+
+    seen, last = set(), -99                                          # month ruler
+    for i, (iso, _) in enumerate(weeks):
+        d = date.fromisoformat(iso)
+        x = X0 + i * PW / (n - 1)
+        if d.month not in seen and d.day <= 7 and x - last > 62:
+            seen.add(d.month); last = x
+            p.append(f'<text x="{x:.1f}" y="{Y1 + 26}" text-anchor="middle" {mono} font-size="11"'
+                     f' fill="{MUTED}">{d.strftime("%b").upper()}</text>')
+
+    p.append(f'<rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="16" fill="none" stroke="{EDGE}"/>')
     p.append("</g></svg>")
     return "\n".join(p) + "\n"
 
@@ -134,7 +150,7 @@ def render_languages(langs, total):
 
 if __name__ == "__main__":
     cal = fetch()
-    open(os.path.join(ASSETS, "contributions.svg"), "w").write(render(cal))
+    open(os.path.join(ASSETS, "activity.svg"), "w").write(render(cal))
     langs, total = fetch_languages()
     open(os.path.join(ASSETS, "languages.svg"), "w").write(render_languages(langs, total))
     print(f"contributions: {cal['totalContributions']} · languages: {len(langs)} / {total/1e6:.1f} MB", file=sys.stderr)

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 236" width="1200" height="236" role="img" aria-label="How I work on AI systems, end to end: start from the deployment constraint, prototype to the fastest path to signal, evaluate on held-out and adversarial data, optimise by quantising, distilling and caching, then run on device under real latency and load. Evaluation feeds back into prototyping. Most models die in a notebook; mine run on a robot's NPU.">
+  <title>How I work — AI systems, end to end</title>
+  <defs>
+    <clipPath id="cm"><rect width="1200" height="236" rx="16"/></clipPath>
+    <marker id="ma" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#3A4351"/></marker>
+    <marker id="mb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#FF7A1A"/></marker>
+  </defs>
+  <g clip-path="url(#cm)">
+    <rect width="1200" height="236" fill="#0A0C10"/>
+    <text x="80" y="44" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" letter-spacing="3.2" fill="#5D6675">HOW I WORK · AI SYSTEMS, END TO END</text>
+
+    <path d="M600 82 C600 46 384 46 384 78" fill="none" stroke="#FF7A1A" stroke-opacity="0.55" stroke-width="1.4" stroke-dasharray="4 4" marker-end="url(#mb)"/>
+    <text x="492" y="42" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10.5" letter-spacing="2" fill="#8A5A2E">TIGHTEN</text>
+
+    <g font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" text-anchor="middle">
+      <g><rect x="80" y="84" width="176" height="52" rx="10" fill="#111419" stroke="#242B36"/>
+        <text x="168" y="115" font-size="13" letter-spacing="1.6" fill="#E7ECF3">CONSTRAINT</text>
+        <text x="168" y="160" font-size="10.5" letter-spacing="1.2" fill="#5D6675">TARGET DEVICE FIRST</text></g>
+      <g><rect x="296" y="84" width="176" height="52" rx="10" fill="#111419" stroke="#242B36"/>
+        <text x="384" y="115" font-size="13" letter-spacing="1.6" fill="#E7ECF3">PROTOTYPE</text>
+        <text x="384" y="160" font-size="10.5" letter-spacing="1.2" fill="#5D6675">FASTEST PATH TO SIGNAL</text></g>
+      <g><rect x="512" y="84" width="176" height="52" rx="10" fill="#111419" stroke="#242B36"/>
+        <text x="600" y="115" font-size="13" letter-spacing="1.6" fill="#E7ECF3">EVALUATE</text>
+        <text x="600" y="160" font-size="10.5" letter-spacing="1.2" fill="#5D6675">HELD-OUT · ADVERSARIAL</text></g>
+      <g><rect x="728" y="84" width="176" height="52" rx="10" fill="#111419" stroke="#242B36"/>
+        <text x="816" y="115" font-size="13" letter-spacing="1.6" fill="#E7ECF3">OPTIMISE</text>
+        <text x="816" y="160" font-size="10.5" letter-spacing="1.2" fill="#5D6675">QUANTISE · DISTIL · CACHE</text></g>
+      <g><rect x="944" y="84" width="176" height="52" rx="10" fill="#17110B" stroke="#FF7A1A" stroke-opacity="0.45"/>
+        <text x="1032" y="115" font-size="13" letter-spacing="1.6" fill="#FF9D4D">ON DEVICE</text>
+        <text x="1032" y="160" font-size="10.5" letter-spacing="1.2" fill="#5D6675">REAL LATENCY · REAL LOAD</text></g>
+    </g>
+
+    <g stroke="#3A4351" stroke-width="1.4" fill="none" marker-end="url(#ma)">
+      <line x1="264" y1="110" x2="288" y2="110"/><line x1="480" y1="110" x2="504" y2="110"/>
+      <line x1="696" y1="110" x2="720" y2="110"/><line x1="912" y1="110" x2="936" y2="110"/>
+    </g>
+    <circle r="3.5" fill="#FF7A1A">
+      <animateMotion dur="6.5s" repeatCount="indefinite" path="M168 110 H1032"/>
+      <animate attributeName="fill-opacity" values="0;1;1;0" keyTimes="0;0.08;0.92;1" dur="6.5s" repeatCount="indefinite"/>
+    </circle>
+
+    <text x="600" y="206" text-anchor="middle" font-family="ui-sans-serif,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="16" fill="#B7C0CD">Most models die in a notebook. Mine run on a robot’s NPU.</text>
+    <rect x="0.5" y="0.5" width="1199" height="235" rx="16" fill="none" stroke="#242B36"/>
+  </g>
+</svg>
