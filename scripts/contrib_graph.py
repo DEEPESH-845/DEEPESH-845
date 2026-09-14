@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Render assets/contributions.svg and assets/languages.svg from live GitHub data.
+"""Render assets/activity.svg and assets/languages.svg from live GitHub data.
 
 Kept in-repo so both panels match the profile palette and the README depends
 on no third-party card service staying up. Refreshed by
@@ -36,11 +36,19 @@ def smooth(pts):
     return " ".join(d)
 
 
+def rolling(vals, n=4):
+    """Trailing n-point mean; the raw weekly series is too bursty to read."""
+    return [sum(vals[max(i - n + 1, 0):i + 1]) / min(i + 1, n) for i in range(len(vals))]
+
+
+assert rolling([0, 4, 8, 12, 16]) == [0, 2, 4, 6, 10]
+
+
 def render(cal):
-    """Commits per week over the last year, as an area graph."""
+    """Commits per week over the last year, smoothed, as an area graph."""
     weeks = [(w["contributionDays"][0]["date"], sum(d["contributionCount"] for d in w["contributionDays"]))
              for w in cal["weeks"]]
-    vals = [v for _, v in weeks]
+    vals = rolling([v for _, v in weeks])
     peak = max(vals) or 1
     W, H, X0, X1, Y0, Y1 = 1200, 306, 92, 1120, 112, 246
     PW, PH = X1 - X0, Y1 - Y0
@@ -51,8 +59,8 @@ def render(cal):
     pk = vals.index(peak)
 
     p = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img"'
-         f' aria-label="Commit volume over the last twelve months: {cal["totalContributions"]} contributions,'
-         f' peaking at {peak} in a single week.">',
+         f' aria-label="Commit volume over the last twelve months, four-week rolling average:'
+         f' {cal["totalContributions"]} contributions.">',
          f'<title>{cal["totalContributions"]} contributions in the last year</title>',
          '<defs>',
          f'<clipPath id="cc"><rect width="{W}" height="{H}" rx="16"/></clipPath>',
@@ -62,11 +70,10 @@ def render(cal):
          '</defs>',
          f'<g clip-path="url(#cc)"><rect width="{W}" height="{H}" fill="{BG}"/>',
          f'<text x="{X0}" y="48" {mono} font-size="12" letter-spacing="3.2" fill="{MUTED}">'
-         'COMMIT VOLUME · LAST 12 MONTHS</text>',
+         'COMMITS · 4-WEEK ROLLING AVERAGE</text>',
          f'<text x="{X0}" y="84" font-family="ui-sans-serif,-apple-system,Segoe UI,Helvetica,Arial,sans-serif"'
          f' font-size="26" font-weight="700" fill="{TEXT}">{cal["totalContributions"]:,}'
-         f'<tspan font-size="17" font-weight="400" fill="#8B95A5"> contributions · peak {peak} in one week'
-         '</tspan></text>']
+         f'<tspan font-size="17" font-weight="400" fill="#8B95A5"> contributions · last 12 months</tspan></text>']
 
     for f in (0, 0.5, 1):                                            # baseline grid
         y = Y1 - f * PH
@@ -109,28 +116,28 @@ def fetch_languages(top=7):
     head, tail = ranked[:top], ranked[top:]
     if tail:
         head.append(("Other", sum(v for _, v in tail)))
-    return head, sum(tot.values())
+    return head, sum(tot.values()), len(repos)
 
 
 RAMP = ["#FF7A1A", "#DB6A1C", "#B7591C", "#94491A", "#733A17", "#553019", "#3B2A1E", "#2A2E36"]
 
 
-def render_languages(langs, total):
+def render_languages(langs, total, repos):
     named = sum(1 for n, _ in langs if n != "Other")
     W, H, BAR_X, BAR_W, BAR_Y = 1200, 236, 92, 1016, 104
     mono = 'font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace"'
     alt = ", ".join(f"{n} {100*v/total:.1f} percent" for n, v in langs)
     p = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}"'
-         f' role="img" aria-label="Code written, by language: {alt}.">',
-         '<title>Code written, by language</title>',
+         f' role="img" aria-label="Languages across {repos} public repositories: {alt}.">',
+         '<title>Languages across public repositories</title>',
          f'<defs><clipPath id="cl"><rect width="{W}" height="{H}" rx="16"/></clipPath>'
          f'<clipPath id="bar"><rect x="{BAR_X}" y="{BAR_Y}" width="{BAR_W}" height="26" rx="6"/></clipPath></defs>',
          f'<g clip-path="url(#cl)"><rect width="{W}" height="{H}" fill="{BG}"/>',
          f'<text x="{BAR_X}" y="48" {mono} font-size="12" letter-spacing="3.2" fill="{MUTED}">'
-         f'CODE WRITTEN · PUBLIC REPOSITORIES</text>',
+         f'LANGUAGES · PUBLIC REPOSITORIES</text>',
          f'<text x="{BAR_X}" y="82" font-family="ui-sans-serif,-apple-system,Segoe UI,Helvetica,Arial,sans-serif"'
-         f' font-size="26" font-weight="700" fill="{TEXT}">{total/1e6:.1f} MB'
-         f'<tspan font-size="17" font-weight="400" fill="#8B95A5"> of source across {named} languages</tspan></text>',
+         f' font-size="26" font-weight="700" fill="{TEXT}">{repos}'
+         f'<tspan font-size="17" font-weight="400" fill="#8B95A5"> public repositories · {named} languages</tspan></text>',
          f'<g clip-path="url(#bar)">']
     x = BAR_X
     for i, (name, v) in enumerate(langs):
@@ -151,6 +158,6 @@ def render_languages(langs, total):
 if __name__ == "__main__":
     cal = fetch()
     open(os.path.join(ASSETS, "activity.svg"), "w").write(render(cal))
-    langs, total = fetch_languages()
-    open(os.path.join(ASSETS, "languages.svg"), "w").write(render_languages(langs, total))
-    print(f"contributions: {cal['totalContributions']} · languages: {len(langs)} / {total/1e6:.1f} MB", file=sys.stderr)
+    langs, total, repos = fetch_languages()
+    open(os.path.join(ASSETS, "languages.svg"), "w").write(render_languages(langs, total, repos))
+    print(f"contributions: {cal['totalContributions']} · languages: {len(langs)} across {repos} repos", file=sys.stderr)

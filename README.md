@@ -152,9 +152,9 @@ result, not a product.
 <!-- activity.svg + languages.svg are regenerated daily by .github/workflows/contributions.yml -->
 **`07 / ACTIVITY`**
 
-<img src="./assets/activity.svg" width="100%" alt="Commit volume over the last twelve months." />
+<img src="./assets/activity.svg" width="100%" alt="Commit volume over the last twelve months, four-week rolling average." />
 
-<img src="./assets/languages.svg" width="100%" alt="Code written across public repositories, by language." />
+<img src="./assets/languages.svg" width="100%" alt="Languages across public repositories." />
 
 ---
 
