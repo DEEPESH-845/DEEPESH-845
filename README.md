@@ -1,170 +1,216 @@
-<!-- ══════════════════ HERO ══════════════════ -->
+<!--
+  Panels in assets/ are generated. Edit data/profile.toml, then run: python3 scripts/render.py
+  activity.svg refreshes daily via .github/workflows/contributions.yml. Full notes: docs/PROFILE.md
+-->
 <div align="center">
 
-<a href="https://deepesh.qzz.io/"><img src="./assets/hero.svg" width="100%" alt="Deepesh Kakkar — backend and AI systems engineer. I build systems whose numbers you can check. Previously Qualcomm, Halliburton, Outlier.ai." /></a>
+<a href="https://deepesh.qzz.io/"><img src="./assets/hero.svg" width="100%" alt="Deepesh Kakkar, AI and full-stack engineer based in Punjab, India. I build AI that runs where the decision happens: on robots, phones, bank logins and payment rails. Global Winner, Qualcomm Snapdragon Multiverse Hackathon 2026. National Runner-Up, PSB Hackathon 2026. National Top 5 in track, Samsung Solve for Tomorrow 2026. Now building Kavach, a trust layer for agentic payments." /></a>
 
-**[Portfolio](https://deepesh.qzz.io/)**&nbsp; · &nbsp;**[LinkedIn](https://www.linkedin.com/in/deepesh-kakkar/)**&nbsp; · &nbsp;**[Email](mailto:deepeshkakkar.work@gmail.com)**&nbsp; · &nbsp;**[Repositories](https://github.com/DEEPESH-845?tab=repositories)**
+**[Selected systems ↓](#02-selected-systems)** &nbsp;·&nbsp; [Portfolio](https://deepesh.qzz.io/) &nbsp;·&nbsp; [LinkedIn](https://www.linkedin.com/in/deepesh-kakkar/) &nbsp;·&nbsp; [Email](mailto:deepeshkakkar.work@gmail.com)
 
 </div>
 
-I build backend and AI systems — Edge AI inference, multi-agent pipelines, and the production
-services around them. B.E. Electronics &amp; Computers, Thapar Institute, class of 2027.
-
----
-
-<!-- ══════════════════ 01 · PROOF ══════════════════ -->
-**`01 / PROOF`**
-
-<img src="./assets/impact.svg" width="100%" alt="Global Winner, Qualcomm Snapdragon Multiverse Hackathon 2026 — top 8 of thousands. National Runner-Up, PSB Hackathon, Government of India — ₹3,00,000, August 2026. 89.2% Edge AI inference accuracy at 2,671+ images/hour on a Qualcomm NPU. Deploy time cut from 18 to 6 minutes at Halliburton, sustaining 5–10 releases a week." />
-
----
-
-<!-- ══════════════════ 02 · SELECTED WORK ══════════════════ -->
-**`02 / SELECTED WORK`**
-
-### `01` &nbsp;DRAGVERSE &nbsp;—&nbsp; *Global Winner, Snapdragon Multiverse Hackathon 2026*
-
-A phone scan becomes a simulation-ready digital twin, a PPO policy learns to drive it, and that
-same policy — exported to ONNX and quantised to INT8 — runs in real time on a Hexagon NPU inside
-a physical robot, with STM32 motor control and a hardware emergency stop.
-
-<img src="./assets/pipeline.svg" width="100%" alt="DragVerse pipeline: phone scan, digital twin in Unity, RL policy trained with ML-Agents PPO, exported to ONNX INT8 via Qualcomm AI Hub, deployed to a real robot on an Arduino UNO Q Hexagon NPU." />
-
-`Unity ML-Agents` `PPO` `ONNX INT8` `Qualcomm AI Hub` `Arduino UNO Q` `STM32`
-
-**[Live demo →](https://drag-verse-beta.vercel.app/)**
+Final-year Electronics &amp; Computer Engineering at Thapar Institute, previously at Qualcomm, Halliburton and Outlier.ai. In 2026, three systems I built with my teams placed at national or global level. I've built client systems for teams in Houston and San Francisco from India, and Kavach and ZeroCloud are live right now.
 
 <br />
 
-### `02` &nbsp;SOLARSAGE &nbsp;—&nbsp; *Global Finalist, Qualcomm Edge AI Hackathon 2025*
+## `01` Where my models run
 
-Multi-agent computer vision that decides whether cleaning a solar panel pays for itself.
-**89.2%** inference accuracy at **2,671+ images/hour** on-device, with **87.3%** decision
-confidence — the pipeline Qualcomm later invited me to productionise with their team.
+The deployment target is the architecture. Every target I've built for, with the number that mattered there.
 
-`CrewAI` `PyTorch` `FastAPI` `Qualcomm NPU` `Llama`
-
-**[Repository →](https://github.com/DEEPESH-845/SolarSage.Ai)**
+<img src="./assets/targets.svg" width="100%" alt="Where my models run. A robot's Hexagon NPU: DragVerse, INT8 in real time. A Qualcomm edge NPU: SolarSage, 2,671 images per hour. A patient's phone: NeuroTrace, 468 face landmarks on-device. Your laptop: ZeroCloud, 26 local LLMs profiled in about 2 seconds. A bank's login path: BehaviorDNA, about 14 ms against a 150 ms budget. A merchant's payment rail: Kavach, about 1 ms per decision." />
 
 <br />
 
-### `03` &nbsp;AETHERIS &nbsp;—&nbsp; *autonomous cyber deception*
+## `02` Selected systems
 
-Attackers get routed into an AI-generated sandbox replica before production is touched.
-LangGraph reasoning over live WebSocket telemetry, MITRE ATT&CK enrichment, automated response.
+### DragVerse
 
-`Next.js` `FastAPI` `LangGraph` `WebSockets` `Docker`
+`GLOBAL WINNER` &nbsp;Qualcomm Snapdragon Multiverse Hackathon 2026
 
-**[Live →](https://aetheris-xi.vercel.app)**&nbsp; · &nbsp;[Source](https://github.com/DEEPESH-845/Aetheris)
+**A phone scan of a room becomes a robot that drives it, in two days.**
 
-<br />
+<img src="./assets/sys-dragverse.svg" width="100%" alt="DragVerse pipeline: phone 3D scan, digital twin in Unity, PPO policy trained with ML-Agents, exported to ONNX and quantised to INT8 with Qualcomm AI Hub, running on an Arduino UNO Q Hexagon NPU, driving a robot with STM32 motor control and a hardware emergency stop." />
 
-### `04` &nbsp;CALNINO &nbsp;—&nbsp; *70–100 weekly active users*
+- **Problem** &nbsp;Robot policies are trained in simulators that rarely match the room the robot will actually drive.
+- **System** &nbsp;Scan the real room, build a simulation-ready digital twin, and train a PPO policy inside it.
+- **On device** &nbsp;The same policy, exported to ONNX and quantised to INT8, runs in real time on a Hexagon NPU, with STM32 motor control and a hardware e-stop.
+- **Outcome** &nbsp;Overall 1st among thousands of applicants. Built by a team of five.
 
-A zero-hydration financial engine: 10+ deterministic tools for mortgage, investment and
-retirement planning, with scenario simulation. Nothing about your money leaves the browser.
-
-`Astro` `TypeScript` `Tailwind` `Cloudflare`
-
-**[calnino.com →](https://www.calnino.com)**&nbsp; · &nbsp;<sub>private repository</sub>
+[**Live demo →**](https://drag-verse-beta.vercel.app/)
 
 <br />
 
-### `05` &nbsp;ZEROCLOUD &nbsp;—&nbsp; *what can this laptop actually run?*
+### BehaviorDNA
 
-A Rust CLI that measures your machine in about two seconds, then predicts decode throughput,
-time-to-first-token and maximum context across 26 local models. Under 5 MB, no telemetry —
-and every printed number is recomputed from a clean clone by `zc gate`.
+`NATIONAL RUNNER-UP` &nbsp;PSB Hackathon 2026 · ₹3,00,000 prize
 
-`Rust` `Metal + CPU backends` `Apache-2.0`
+**Banking that checks *who* is typing, not only what they typed.**
 
-**[Install →](https://github.com/DEEPESH-845/ZeroCloud)**
+<img src="./assets/sys-behaviordna.svg" width="100%" alt="BehaviorDNA pipeline: 40+ keystroke and session signals every 500 ms, a FastAPI engine on every login, three parallel pathways for device trust, coercion and ML, a 0 to 1000 risk score with three decision bands, a decision in about 14 ms against a 150 ms SLA, and a LangGraph case report on hard blocks only." />
+
+- **Problem** &nbsp;Stolen credentials and SIM swaps pass every password check.
+- **System** &nbsp;A client SDK streams 40+ behavioural signals to a FastAPI engine that fuses device trust (Hyperledger Fabric, with a Redis fast path under 1 ms), coercion context and ML into one risk score.
+- **Models** &nbsp;BehaveFormer transformer: ROC-AUC 0.944 on 10,000 users. XGBoost on a leak-free temporal split: 0.868. An earlier near-perfect model was deleted when its score traced to data leakage.
+- **Outcome** &nbsp;~14 ms per decision against a 150 ms SLA. 2nd of 226 teams.
+
+[**Live demo →**](https://frontend-one-xi-76.vercel.app/) &nbsp;·&nbsp; source private
+
+<br />
+
+### NeuroTrace
+
+`NATIONAL TOP 5 IN TRACK` &nbsp;Samsung Solve for Tomorrow 2026
+
+**A three-minute daily stroke check that never sends your face to a server.**
+
+<img src="./assets/sys-neurotrace.svg" width="100%" alt="NeuroTrace pipeline: a 3-minute daily check of voice, face and reaction time, on-device AI with MediaPipe and ONNX, sync of derived metrics only, a per-patient baseline from the first 5 to 7 days, deviation beyond 2 standard deviations for 3 days, and FHIR R4 export with LOINC codes." />
+
+- **Problem** &nbsp;Decline in the 90 days after a stroke is easy to miss between clinic visits.
+- **On device** &nbsp;MediaPipe's 468 face landmarks score asymmetry; quantised Phi-3-Mini on ONNX Runtime extracts speech biomarkers. Raw biometrics never leave the phone.
+- **Intelligence** &nbsp;Each patient is their own baseline. An alert fires past 2 standard deviations sustained for 3 days, graded at 2, 3 and 4 SD.
+- **Outcome** &nbsp;Clinician-ready FHIR R4 export. Top 20 overall from 40,000+ applications.
+
+[**Live demo →**](https://neuro-trace-v1.vercel.app/) &nbsp;·&nbsp; [Source](https://github.com/DEEPESH-845/NeuroTrace)
+
+<br />
+
+### ZeroCloud
+
+`OPEN SOURCE` &nbsp;Rust CLI · v0.1.0 · Apache-2.0
+
+**What can this laptop actually run, and how fast?**
+
+<img src="./assets/sys-zerocloud.svg" width="100%" alt="ZeroCloud pipeline: measure RAM bandwidth with a STREAM triad, disk on the volume the models live on, and compute with f32 and int8 GEMM, then apply memory-bound math, efficiency times bandwidth over bytes, to predict decode speed, context and time to first token, checked by zc gate at 9.4% median error." />
+
+- **Problem** &nbsp;Spec sheets hide what actually sets local-LLM speed on cheap hardware: single-channel RAM, an iGPU holding system memory, a DRAM-less SSD, WSL2 quietly halving your RAM.
+- **System** &nbsp;`zc` measures RAM bandwidth, disk and compute in about 2 seconds, then predicts decode speed, time to first token and maximum context for 26 catalogued models, or any Hugging Face repo.
+- **Honesty** &nbsp;Predictions are ranges, never points. Every number is measured, derived from measured inputs, or printed as `-`. `zc gate` recomputes accuracy from a clean clone: **9.4% median error** across 8 machines.
+- **Outcome** &nbsp;v0.1.0 binaries for macOS, Linux and Windows. Under 5 MB, zero network by default, and an HTTP and MCP server so agents can ask what a machine can run before suggesting a model.
+
+[**Install →**](https://github.com/DEEPESH-845/ZeroCloud#install) &nbsp;·&nbsp; [Source](https://github.com/DEEPESH-845/ZeroCloud) &nbsp;·&nbsp; Pre-1.0: one more bare-metal laptop closes its accuracy gate. If you have one, `zc verify` and `zc share` take about 20 minutes.
+
+<br />
+
+### SolarSage
+
+`GLOBAL FINALIST` &nbsp;Qualcomm Edge AI Developer Hackathon 2025
+
+**Decides whether cleaning a solar panel pays for itself, on the device.** CrewAI agents reason over on-device computer vision on a Qualcomm NPU: **89.2%** accuracy at **2,671+ images/hour**, 87.3% decision confidence. Qualcomm then invited me to build a production desktop version with its engineers.
+
+[**Console →**](https://solarsage-console.vercel.app) &nbsp;·&nbsp; [Source](https://github.com/DEEPESH-845/SolarSage.Ai)
+
+<br />
+
+### Calnino
+
+`LIVE PRODUCT` &nbsp;70–100 weekly active users
+
+**Mortgage, refinancing, investment and retirement maths, as tools people come back to weekly.** 10+ deterministic tools with scenario simulation. Astro and TypeScript on Cloudflare, multilingual and SEO-native.
+
+[**calnino.com →**](https://www.calnino.com) &nbsp;·&nbsp; source private
 
 <details>
-<summary><b><code>+ 6 more builds</code></b></summary>
+<summary><b>7 more builds</b></summary>
 
 <br />
 
-| Build | One line | Stack |
-|---|---|---|
-| **[Guardiant](https://github.com/DEEPESH-845/Guardiant)** | Wallets that self-destruct before a rug pull completes — graph analytics cut fraud-detection latency 85% | Solidity · PyTorch · NetworkX |
-| **[Nivaaran](https://nivaaran-pi.vercel.app)** | Runs every check EPFO will run *before* you file, and names who has to fix what | Next.js 16 · TypeScript |
-| **[CrisisLink](https://github.com/DEEPESH-845/CrisisLink)** | AI triage for India's 112 network — classifies multilingual calls in under 3s, dispatches the nearest unit | Python · Gemini · Whisper |
-| **[Credify](https://github.com/DEEPESH-845/Credify)** | On-chain professional credentials — tamper-proof degrees and certifications | Solidity · OpenZeppelin · IPFS |
-| **[NeuroTrace](https://github.com/DEEPESH-845/NeuroTrace)** | On-device neurological monitoring through the 90-day post-stroke window | React Native · ONNX · Phi-3 |
-| **[Kinetic Keys](https://kinetic-keys.vercel.app/)** | 3D keyboard configurator with Stripe checkout — 35% faster render pipeline | Three.js · GSAP · Stripe |
+- **[Guardiant](https://guardiant.vercel.app/)**: graph analytics and ML flag a wallet before a rug pull completes, cutting fraud-detection latency by 85%. Solidity contracts move the assets out. [source](https://github.com/DEEPESH-845/Guardiant)
+- **[Aetheris](https://aetheris-xi.vercel.app)**: the operator console for routing attackers into AI-generated sandbox twins. Interactive prototype; the threat feed is simulated. [source](https://github.com/DEEPESH-845/Aetheris)
+- **[Nivaaran](https://nivaaran-pi.vercel.app)**: runs every check EPFO will run before you file a PF claim, and names who has to fix each mismatch. [source](https://github.com/DEEPESH-845/Nivaaran)
+- **[CrisisLink](https://github.com/DEEPESH-845/CrisisLink)**: an AI triage co-pilot for India's 112 line. It classifies multilingual calls and dispatches the nearest unit.
+- **[GantryLab](https://hydra-loom.vercel.app)**: a browser twin of an underwater-robotics test rig (camera gantry, detection, control policy). Simulated in the browser; the Python backend targets the real rig.
+- **[Credify](https://credify-lime.vercel.app)**: tamper-proof degrees and certifications, on-chain. [source](https://github.com/DEEPESH-845/Credify)
+- **[Kinetic Keys](https://kinetic-keys.vercel.app/)**: a 3D keyboard configurator with Stripe Checkout and 35% better animation performance. [source](https://github.com/DEEPESH-845/Kinetic-Keys)
 
 </details>
 
----
+<br />
 
-<!-- ══════════════════ 03 · STACK ══════════════════ -->
-**`03 / STACK`**
+## `03` Record
 
-<img src="./assets/stack.svg" width="100%" alt="Languages: C++, Java, Python, TypeScript, JavaScript, C, SQL. AI systems: LangGraph, CrewAI, RAG, PyTorch, ONNX, Edge AI, Qualcomm NPU, ML-Agents, scikit-learn. Backend: FastAPI, Node.js, Express, REST, WebSockets, tRPC, WebRTC. Frontend: React, Next.js, Astro, Tailwind, Three.js, GSAP, Framer Motion. Data: PostgreSQL, MySQL, MongoDB, Redis, DynamoDB, FAISS, Pinecone. Cloud and DevOps: AWS, Docker, Kubernetes, GitHub Actions, Vercel, Cloudflare." />
+<img src="./assets/record.svg" width="100%" alt="Record. Global Winner, Qualcomm Snapdragon Multiverse Hackathon, July 2026: overall 1st of thousands, with DragVerse. National Runner-Up, PSB Hackathon Series 2026, Government of India, August 2026: 2nd of 226 teams, 3,00,000 rupee prize, with BehaviorDNA. National Top 5 in track, Samsung Solve for Tomorrow 2026: Top 20 overall from 40,000+ applications, with NeuroTrace. Also: Global Finalist, Qualcomm Edge AI Developer Hackathon 2025, with SolarSage; Winner, Most Innovative Hack, HackSpire 2025; Finalist, ISB Secure Bharat CyberSec Hackathon 2026; Finalist, Indo-Israeli Hackathon 2025." />
 
----
+Also on the record: Top submission, Codecircuit.ai (2025) · India Book of Records, Fastest Memory Practitioner (2018).
 
-<!-- ══════════════════ 04 · JOURNEY ══════════════════ -->
-**`04 / JOURNEY`**
+**Qualcomm** · Backend &amp; Systems Engineer, apprenticeship · Jun–Aug 2025 · hybrid, Bengaluru<br />
+Built an Edge AI inference pipeline for Qualcomm NPUs → trained and benchmarked vision models on enterprise GPUs → **89.2% accuracy at 2,671+ images/hour** on the target hardware. Invited after the Edge AI Hackathon global finals.
 
-<img src="./assets/timeline.svg" width="100%" alt="2026: Global Winner, Snapdragon Multiverse Hackathon, Qualcomm, July 2026; National Runner-Up, PSB Hackathon, Government of India, ₹3,00,000, August 2026. 2025: Frontend Developer at Outlier.ai, July to December; Head of Technology at Saturnalia TIET, September to November; Backend and Systems Engineer Intern at Qualcomm, June to August; Software Development Engineer Intern at Halliburton, May to July." />
+**Halliburton** · Software Development Engineer, intern · May–Jul 2025 · remote<br />
+Automated CI/CD with GitHub Actions and Vercel → **deploys cut from 18 to 6 minutes** at 5–10 releases a week. Shipped a 20+ page Next.js and TypeScript platform with server-side rendering.
 
-<sub>**Also** — Finalist, ISB Secure Bharat CyberSec 2026 · Winner, Most Innovative Hack, HackSpire 2025 ·
-Finalist, Indo-Israeli Hackathon 2025 · Top submission, CodeCircuit.ai · India Book of Records holder,
-Fastest Memory Practitioner</sub>
+**Outlier.ai** · Frontend Developer, freelance · Jul–Dec 2025 · remote<br />
+Built TypeScript applications using GenAI workflows and automation.
 
----
+**Saturnalia, TIET** · Head of Technology · Sep–Nov 2025<br />
+Led the team behind the fest platform. Integrated payments, ticketing and CDN behind RBAC, set up zero-downtime CI/CD, and added dashboards with incident workflows.
 
-<!-- ══════════════════ 05 · HOW I WORK ══════════════════ -->
-**`05 / HOW I WORK`**
+*B.E. Electronics &amp; Computer Engineering · Thapar Institute of Engineering &amp; Technology · 2023–2027*
 
-<img src="./assets/method.svg" width="100%" alt="How I work on AI systems, end to end: start from the deployment constraint, prototype to the fastest path to signal, evaluate on held-out and adversarial data, optimise by quantising, distilling and caching, then run on device under real latency and load — with evaluation feeding back into prototyping." />
+<br />
 
-**`01 — THE DEPLOYMENT TARGET IS THE ARCHITECTURE`**<br>
-A fixed NPU memory budget doesn't make the problem smaller, it makes it a different problem.
-I design backwards from the device the model has to live on.
+## `04` Reach
 
-**`02 — BUILD THE EVAL BEFORE THE MODEL`**<br>
-Anything you can't score, you can't improve. 89.2% only means something next to the held-out
-set it was measured on, and the adversarial cases that tried to break it.
+<img src="./assets/globe.svg" width="100%" alt="Particle globe. Arcs leave Punjab, India for Bengaluru (Qualcomm, hybrid apprenticeship), Houston, USA and San Francisco, USA (client systems built remotely from India). Client cities are shown without client names." />
 
-**`03 — THE MODEL IS 10% OF THE SYSTEM`**<br>
-Orchestration, latency budgets, failure paths and retries are what decide whether a
-multi-agent pipeline survives contact with production.
+**[Explore the interactive globe →](https://deepesh-845.github.io/DEEPESH-845/globe/)**  &nbsp;Drag to rotate; same data as above.
 
-**`04 — LATENCY IS A FEATURE`**<br>
-2,671 images an hour on-device, or it doesn't ship. Accuracy that arrives late is a research
-result, not a product.
+<br />
 
----
+## `05` Principles
 
-<!-- ══════════════════ 06 · NOW ══════════════════ -->
-**`06 / NOW`**
+**01 · The deployment target is the architecture.**<br />
+A fixed NPU memory budget doesn't make the problem smaller. It makes it a different problem, so I design backwards from the device.
 
-<img src="./assets/terminal.svg" width="100%" alt="Terminal — whoami: deepesh, backend and AI systems engineer. Active: Kavach, a merchant-side trust layer for agentic commerce; ZeroCloud, local-LLM capability prediction in Rust. Principle: a number without a source is not a number." />
+**02 · Build the eval before the model.**<br />
+BehaviorDNA once had a near-perfect fraud model. I deleted it the day its score traced back to data leakage.
 
-`Open to`&nbsp; internship and new-grad conversations for 2027 &nbsp;<!-- edit as this changes -->
+**03 · Fail soft, everywhere.**<br />
+If the ledger, the LLM or the model weights disappear, a genuine customer still logs in. The model is the smallest part of the system.
 
----
+**04 · Latency is a feature.**<br />
+14 ms against a 150 ms budget is the product. Accuracy that arrives late is a research result.
 
-<!-- ══════════════════ 07 · ACTIVITY ══════════════════ -->
-<!-- activity.svg + languages.svg are regenerated daily by .github/workflows/contributions.yml -->
-**`07 / ACTIVITY`**
+**05 · Ranges, never points.**<br />
+ZeroCloud's prediction band claimed 90% coverage. Its own gate measured 54.5%. I fixed the method, not the claim, and the band got wider and honest.
 
-<img src="./assets/activity.svg" width="100%" alt="Commit volume over the last twelve months, four-week rolling average." />
+<br />
 
-<img src="./assets/languages.svg" width="100%" alt="Languages across public repositories." />
+## `06` Stack, by the job it did
 
----
+- **On-device AI** &nbsp;ONNX Runtime · INT8 quantisation · Qualcomm AI Hub / QAIRT · MediaPipe<br />→ <i>DragVerse · SolarSage · NeuroTrace</i>
+- **Models &amp; evaluation** &nbsp;PyTorch · XGBoost · scikit-learn · SHAP · Unity ML-Agents (PPO)<br />→ <i>BehaviorDNA · DragVerse · Guardiant</i>
+- **Agents** &nbsp;LangGraph · CrewAI · MCP · Llama via Groq<br />→ <i>BehaviorDNA · SolarSage · Kavach · ZeroCloud</i>
+- **Backend &amp; data** &nbsp;Python · FastAPI · Node.js · PostgreSQL · Prisma · Redis · Hyperledger Fabric (Go)<br />→ <i>BehaviorDNA · NeuroTrace</i>
+- **Product** &nbsp;TypeScript · Next.js · React Native · Astro · Three.js · Tailwind<br />→ <i>Calnino · NeuroTrace · Halliburton</i>
+- **Systems &amp; delivery** &nbsp;Rust · Docker · GitHub Actions · Vercel · Cloudflare<br />→ <i>ZeroCloud · Halliburton CI/CD · Calnino</i>
 
-<!-- ══════════════════ FOOTER ══════════════════ -->
+<br />
+
+## `07` Now
+
+> **Kavach** · the merchant-side trust layer for agentic commerce
+>
+> Agents now stand on both sides of a merchant's counter. Buyer agents arrive at checkout carrying mandates nobody can verify, and the merchant's own agents move money out. Kavach verifies agents coming in, governs agents acting out, and writes tamper-evident proof of every decision. Cryptography and integer arithmetic sit at the edges. Trained models sit in the middle, and they may only ever move a decision toward more caution.
+>
+> On its generated benchmark, at equal human-review cost, duplicate-refund leakage falls from **₹1,84,636** under a hand-written rule to **₹14,257**. Decisions take **~1 ms**, in process, with no network call on the decision path.
+>
+> **[Take the 5-minute tour →](https://kavach-production-0363.up.railway.app/tour/)** &nbsp;(Razorpay test mode) &nbsp;·&nbsp; [Source](https://github.com/DEEPESH-845/Kavach)
+
+`Open to` &nbsp;internship and new-grad conversations for 2027 <!-- edit as this changes -->
+
+<br />
+
+## `08` Signal
+
+<img src="./assets/activity.svg" width="100%" alt="Commit activity over the last twelve months as a four-week rolling average, with the Snapdragon win and the PSB runner-up marked on the curve." />
+
+<br />
+
 <div align="center">
 
 <img src="./assets/footer.svg" width="100%" alt="Make it real. Then make it checkable." />
 
-**[Portfolio](https://deepesh.qzz.io/)**&nbsp; · &nbsp;**[LinkedIn](https://www.linkedin.com/in/deepesh-kakkar/)**&nbsp; · &nbsp;**[Email](mailto:deepeshkakkar.work@gmail.com)**&nbsp; · &nbsp;**[GitHub](https://github.com/DEEPESH-845)**
-
-<sub>© 2026 Deepesh Kakkar</sub>
+**[deepeshkakkar.work@gmail.com](mailto:deepeshkakkar.work@gmail.com)** &nbsp;·&nbsp; [LinkedIn](https://www.linkedin.com/in/deepesh-kakkar/) &nbsp;·&nbsp; [Portfolio](https://deepesh.qzz.io/)
 
 </div>

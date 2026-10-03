@@ -1,0 +1,192 @@
+# Single source for every generated panel in assets/.
+# Edit here, then run:  python3 scripts/render.py
+# Every claim mirrors Resume-Updater/data/*.yaml (the verified register). Do not add a
+# number here that is not in that register or in the project's own repository.
+
+[identity]
+name = "Deepesh Kakkar"
+role = "AI / FULL-STACK ENGINEER"
+base = "PUNJAB, INDIA"
+line1 = "I build AI that runs where the decision happens:"
+line2 = "on robots, phones, bank logins and payment rails."
+now = "NOW BUILDING · KAVACH, A TRUST LAYER FOR AGENTIC PAYMENTS"
+
+# ── Proof. tier 1 = hero + large rows, tier 2 = grid. Lower tiers live in README text.
+[[award]]
+tier = 1
+title = "GLOBAL WINNER"
+event = "Qualcomm Snapdragon Multiverse Hackathon"
+meta = "JUL 2026 · OVERALL 1ST · WITH DRAGVERSE"
+figure = "1st"
+figure_sub = "of thousands"
+hero = "QUALCOMM SNAPDRAGON '26"
+
+[[award]]
+tier = 1
+title = "NATIONAL RUNNER-UP"
+event = "PSB Hackathon Series 2026 · Govt. of India"
+meta = "AUG 2026 · ₹3,00,000 · WITH BEHAVIORDNA"
+figure = "2nd"
+figure_sub = "of 226 teams"
+hero = "PSB HACKATHON '26 · ₹3L"
+
+[[award]]
+tier = 1
+title = "NATIONAL TOP 5 IN TRACK"
+hero_title = "NATIONAL TOP 5"
+event = "Samsung Solve for Tomorrow 2026"
+meta = "SEP 2026 · TOP 20 OVERALL · WITH NEUROTRACE"
+figure = "Top 5"
+figure_sub = "in track · 40,000+ applied"
+hero = "SAMSUNG SFT '26 · TRACK"
+
+[[award]]
+tier = 2
+title = "GLOBAL FINALIST"
+event = "Qualcomm Edge AI Developer Hackathon"
+meta = "2025 · WITH SOLARSAGE"
+
+[[award]]
+tier = 2
+title = "MOST INNOVATIVE HACK"
+event = "HackSpire"
+meta = "2025 · WINNER"
+
+[[award]]
+tier = 2
+title = "FINALIST"
+event = "ISB Secure Bharat CyberSec Hackathon"
+meta = "2026"
+
+[[award]]
+tier = 2
+title = "FINALIST"
+event = "Indo-Israeli Hackathon"
+meta = "2025"
+
+# ── Where my models run. Order: physical → digital.
+[[target]]
+where = "A robot's Hexagon NPU"
+project = "DRAGVERSE"
+metric = "INT8, real time"
+
+[[target]]
+where = "A Qualcomm edge NPU"
+project = "SOLARSAGE"
+metric = "2,671 img/h"
+
+[[target]]
+where = "A patient's phone"
+project = "NEUROTRACE"
+metric = "468 landmarks"
+
+[[target]]
+where = "Your laptop"
+project = "ZEROCLOUD"
+metric = "26 LLMs in ~2 s"
+
+[[target]]
+where = "A bank's login path"
+project = "BEHAVIORDNA"
+metric = "~14 ms / 150 ms"
+
+[[target]]
+where = "A merchant's payment rail"
+project = "KAVACH"
+metric = "~1 ms"
+
+# ── System strips. 6 stages each, rendered as two wrapped rows of three.
+#    `hot` = index of the stage that carries the engineering weight.
+[system.dragverse]
+hot = 4
+stages = [
+  ["PHONE SCAN", "3D capture"],
+  ["DIGITAL TWIN", "Unity"],
+  ["PPO POLICY", "ML-Agents"],
+  ["ONNX · INT8", "Qualcomm AI Hub"],
+  ["HEXAGON NPU", "Arduino UNO Q"],
+  ["ROBOT", "STM32 · e-stop"],
+]
+
+[system.behaviordna]
+hot = 4
+stages = [
+  ["KEYSTROKES", "40+ signals / 500 ms"],
+  ["FASTAPI ENGINE", "every login"],
+  ["3 PATHWAYS", "device · coercion · ML"],
+  ["RISK 0–1000", "3 decision bands"],
+  ["DECISION", "~14 ms vs 150 ms SLA"],
+  ["CASE REPORT", "LangGraph, hard blocks"],
+]
+
+[system.zerocloud]
+hot = 5
+stages = [
+  ["RAM BANDWIDTH", "STREAM triad"],
+  ["DISK", "the model's own volume"],
+  ["COMPUTE", "f32 · int8 GEMM"],
+  ["MEMORY-BOUND", "η × bandwidth / bytes"],
+  ["PREDICTION", "tok/s · context · TTFT"],
+  ["ZC GATE", "9.4% median error"],
+]
+
+[system.neurotrace]
+hot = 1
+stages = [
+  ["3-MIN CHECK", "voice · face · reaction"],
+  ["ON-DEVICE AI", "MediaPipe · ONNX"],
+  ["SYNC", "derived metrics only"],
+  ["BASELINE", "first 5–7 days"],
+  ["DEVIATION", "> 2 SD, 3 days"],
+  ["EHR EXPORT", "FHIR R4 · LOINC"],
+]
+
+# ── Activity annotations (month the event happened, label under the curve).
+[[milestone]]
+date = "2026-07-19"
+label = "SNAPDRAGON WIN"
+
+[[milestone]]
+date = "2026-08-01"
+label = "PSB RUNNER-UP"
+
+# ── Globe. Only places you have confirmed. `kind`:
+#   base   = where the work is done
+#   team   = an organisation's office you worked with remotely
+#   client = a city where you built systems for clients. City level only: client names stay private.
+# View centre [lat, lon]. Delete the line to let render.py pick one automatically.
+[globe]
+centre = [60, 156]
+
+# Add more clients as [[place]] blocks with kind = "client". The legend fits ~5 places.
+[[place]]
+label = "PUNJAB, INDIA"
+org = "Base"
+what = "Thapar Institute, B.E. 2027"
+lat = 30.34
+lon = 76.39
+kind = "base"
+
+[[place]]
+label = "BENGALURU, INDIA"
+org = "Qualcomm"
+what = "apprenticeship, hybrid"
+lat = 12.97
+lon = 77.59
+kind = "team"
+
+[[place]]
+label = "HOUSTON, USA"
+org = "Client systems"
+what = "built remotely from India"
+lat = 29.76
+lon = -95.37
+kind = "client"
+
+[[place]]
+label = "SAN FRANCISCO, USA"
+org = "Client systems"
+what = "built remotely from India"
+lat = 37.77
+lon = -122.42
+kind = "client"

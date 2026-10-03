@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Built in India · Deepesh Kakkar</title>
+<meta name="description" content="Interactive particle globe: where Deepesh Kakkar's engineering work has reached. Data generated from data/profile.toml.">
+<style>
+  :root{--bg:#0B0D11;--surface:#11151B;--border:#222933;--text:#ECEFF4;--text2:#A7B0BE;--muted:#7A8494;--signal:#FF7A1A;--soft:#FFA766;--cool:#7D9BBF}
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%;background:var(--bg);color:var(--text);font:16px/1.5 ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
+  .m{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:.12em;text-transform:uppercase}
+  main{min-height:100%;display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:24px;padding:24px;max-width:1200px;margin:0 auto}
+  .stage{position:relative;min-height:420px;border:1px solid var(--border);border-radius:14px;overflow:hidden;
+    background:var(--bg) repeating-linear-gradient(0deg,#ffffff08 0 1px,transparent 1px 24px),repeating-linear-gradient(90deg,#ffffff08 0 1px,transparent 1px 24px)}
+  canvas{display:block;width:100%;height:100%;cursor:grab;touch-action:none}
+  canvas:active{cursor:grabbing}
+  .hint{position:absolute;left:16px;bottom:12px;font-size:12px;color:var(--muted)}
+  aside h1{font-size:28px;line-height:1.15;margin:8px 0 4px}
+  aside .kick{color:var(--signal);font-size:13px;font-weight:700}
+  aside p{color:var(--text2);margin:0 0 20px}
+  ol{list-style:none;margin:0;padding:0}
+  li{padding:12px 0 12px 14px;border-left:2px solid var(--border);margin-bottom:8px;cursor:pointer;border-radius:0 8px 8px 0}
+  li:hover,li:focus-visible,li[aria-current]{border-color:var(--signal);background:var(--surface);outline:none}
+  li b{display:block;font-size:14px}
+  li span{display:block;color:var(--text2);font-size:15px}
+  li small{color:var(--muted);font-size:13px}
+  .note{font-size:13px;color:var(--muted);margin-top:16px}
+  a{color:var(--soft)}
+  @media (max-width:820px){main{grid-template-columns:1fr;padding:16px}.stage{height:min(92vw,520px);min-height:0}}
+</style>
+</head>
+<body>
+<main>
+  <div class="stage"><canvas id="c" aria-label="Interactive globe. Drag or use arrow keys to rotate." tabindex="0"></canvas>
+    <div class="hint m">Drag · arrow keys · select a place</div></div>
+  <aside>
+    <div class="kick m">Built in India</div>
+    <h1>Deepesh Kakkar</h1>
+    <p>Where the work has reached. Arcs end at each organisation's headquarters; the work was done from India.</p>
+    <ol id="list"></ol>
+    <p class="note">Generated from <code>data/profile.toml</code> · <a href="https://github.com/DEEPESH-845">Back to GitHub</a></p>
+  </aside>
+</main>
+<script>
+const C = {cool:'#7D9BBF', signal:'#FF7A1A', soft:'#FFA766', muted:'#7A8494', bg:'#0B0D11', text:'#ECEFF4'};
+const still = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const rad = Math.PI / 180;
+const cv = document.getElementById('c'), ctx = cv.getContext('2d');
+let D, rot = {lat: 30, lon: -20}, vel = 0, drag = null, focus = 0, t0 = performance.now();
+
+const vec = (la, lo) => [Math.cos(la*rad)*Math.cos(lo*rad), Math.cos(la*rad)*Math.sin(lo*rad), Math.sin(la*rad)];
+
+function project([x, y, z], r, R, cx, cy) {   // orthographic, view centred on rot
+  const lam = Math.atan2(y, x), phi = Math.asin(z / Math.hypot(x, y, z));
+  const p0 = rot.lat*rad, l0 = rot.lon*rad, dl = lam - l0;
+  const X = Math.cos(phi)*Math.sin(dl);
+  const Y = Math.cos(p0)*Math.sin(phi) - Math.sin(p0)*Math.cos(phi)*Math.cos(dl);
+  const Z = Math.sin(p0)*Math.sin(phi) + Math.cos(p0)*Math.cos(phi)*Math.cos(dl);
+  return [cx + R*r*X, cy - R*r*Y, Z];
+}
+
+function arc(a, b, lift = .22, n = 72) {     // great circle, raised mid-flight
+  const om = Math.acos(Math.min(1, a[0]*b[0] + a[1]*b[1] + a[2]*b[2]));
+  lift *= Math.min(1, om / (Math.PI / 2));             // short hops hug the surface
+  return Array.from({length: n + 1}, (_, k) => {
+    const t = k / n, s1 = Math.sin((1-t)*om)/Math.sin(om), s2 = Math.sin(t*om)/Math.sin(om);
+    return [[0,1,2].map(i => s1*a[i] + s2*b[i]), 1 + lift*Math.sin(Math.PI*t)];
+  });
+}
+
+function draw(now) {
+  const dpr = devicePixelRatio || 1, w = cv.clientWidth, h = cv.clientHeight;
+  if (cv.width !== w*dpr) { cv.width = w*dpr; cv.height = h*dpr; }
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  ctx.clearRect(0, 0, w, h);
+  const R = Math.min(w, h) * .4, cx = w/2, cy = h/2 + R*.06;
+  const g = ctx.createRadialGradient(cx - R*.25, cy - R*.3, R*.1, cx, cy, R);
+  g.addColorStop(0, '#17222F'); g.addColorStop(1, C.bg);
+  ctx.fillStyle = g; ctx.beginPath(); ctx.arc(cx, cy, R, 0, 7); ctx.fill();
+
+  ctx.lineWidth = .8; ctx.strokeStyle = 'rgba(125,155,191,.14)';   // graticule
+  const line = pts => { ctx.beginPath(); let on = false;
+    for (const [x, y, z] of pts) { if (z > 0) { on ? ctx.lineTo(x, y) : ctx.moveTo(x, y); on = true; } else on = false; }
+    ctx.stroke(); };
+  for (let la = -60; la <= 60; la += 30) line(Array.from({length: 121}, (_, i) => project(vec(la, -180 + i*3), 1, R, cx, cy)));
+  for (let lo = -180; lo < 180; lo += 30) line(Array.from({length: 60}, (_, i) => project(vec(-88 + i*3, lo), 1, R, cx, cy)));
+
+  for (const [la, lo] of D.land) {                                  // particles, depth-shaded
+    const [x, y, z] = project(vec(la, lo), 1, R, cx, cy);
+    if (z <= .02) continue;
+    ctx.fillStyle = `rgba(125,155,191,${.18 + .7*z})`;
+    ctx.beginPath(); ctx.arc(x, y, (.7 + .8*z) * R/260, 0, 7); ctx.fill();
+  }
+  ctx.strokeStyle = 'rgba(125,155,191,.35)'; ctx.lineWidth = 1;
+  ctx.beginPath(); ctx.arc(cx, cy, R, 0, 7); ctx.stroke();
+
+  const base = D.places.find(p => p.kind === 'base'), bv = vec(base.lat, base.lon);
+  const tt = (now - t0) / 1000;
+  D.places.forEach((p, k) => {
+    if (p === base) return;
+    const pts = arc(bv, vec(p.lat, p.lon)).map(([v, r]) => project(v, r, R, cx, cy));
+    const vis = ([x, y, z]) => z > -.05 || Math.hypot(x - cx, y - cy) > R;
+    ctx.lineWidth = k === focus ? 2 : 1.3;
+    ctx.strokeStyle = k === focus ? 'rgba(255,122,26,.85)' : 'rgba(255,122,26,.4)';
+    line(pts.map(q => vis(q) ? [q[0], q[1], 1] : [0, 0, -1]));
+    if (!still) {                                                    // travelling packet
+      const i = Math.floor(((tt / 4.8 + k * .33) % 1) * (pts.length - 1)), q = pts[i];
+      if (vis(q)) { ctx.fillStyle = C.soft; ctx.beginPath(); ctx.arc(q[0], q[1], 3, 0, 7); ctx.fill(); }
+    }
+  });
+  ctx.font = '700 12px ui-monospace,SFMono-Regular,Menlo,monospace';
+  D.places.forEach((p, k) => {                                       // nodes + labels
+    const [x, y, z] = project(vec(p.lat, p.lon), 1, R, cx, cy);
+    if (z < 0) return;
+    const hot = p === base || k === focus;
+    ctx.fillStyle = C.bg; ctx.strokeStyle = hot ? C.signal : C.muted; ctx.lineWidth = 1.4;
+    ctx.beginPath(); ctx.arc(x, y, 6.5, 0, 7); ctx.fill(); ctx.stroke();
+    ctx.fillStyle = hot ? C.signal : C.muted; ctx.beginPath(); ctx.arc(x, y, 2.4, 0, 7); ctx.fill();
+    if (p === base && !still) {
+      ctx.strokeStyle = `rgba(255,122,26,${.5 - .5*((tt % 2.4) / 2.4)})`;
+      ctx.beginPath(); ctx.arc(x, y, 8 + 10*((tt % 2.4) / 2.4), 0, 7); ctx.stroke();
+    }
+    if (k === focus || p === base) { ctx.fillStyle = hot ? C.soft : C.text; ctx.fillText(p.label, x + 12, y - 10); }
+  });
+
+  if (!drag) {                                                       // idle drift + inertia
+    rot.lon += vel + (still ? 0 : .04); vel *= .94;
+  }
+  requestAnimationFrame(draw);
+}
+
+function aim(p) {                                                    // ease the view toward a place
+  const target = {lat: Math.max(-10, Math.min(60, p.lat)), lon: p.lon}, s = {...rot}, t = performance.now();
+  const step = now => { const k = Math.min(1, (now - t) / 900), e = 1 - (1 - k) ** 3;
+    rot.lat = s.lat + (target.lat - s.lat) * e;
+    rot.lon = s.lon + ((((target.lon - s.lon) % 360) + 540) % 360 - 180) * e;
+    if (k < 1) requestAnimationFrame(step); };
+  still ? Object.assign(rot, target) : requestAnimationFrame(step);
+}
+
+cv.addEventListener('pointerdown', e => { drag = {x: e.clientX, y: e.clientY}; cv.setPointerCapture(e.pointerId); });
+cv.addEventListener('pointermove', e => {
+  if (!drag) return;
+  const dx = e.clientX - drag.x, dy = e.clientY - drag.y;
+  rot.lon -= dx * .3; rot.lat = Math.max(-80, Math.min(80, rot.lat + dy * .3)); vel = -dx * .05;
+  drag = {x: e.clientX, y: e.clientY};
+});
+addEventListener('pointerup', () => drag = null);
+cv.addEventListener('keydown', e => {
+  const k = {ArrowLeft: [0, 6], ArrowRight: [0, -6], ArrowUp: [-6, 0], ArrowDown: [6, 0]}[e.key];
+  if (k) { e.preventDefault(); rot.lat = Math.max(-80, Math.min(80, rot.lat + k[0])); rot.lon += k[1]; }
+});
+
+fetch('data.json').then(r => r.json()).then(d => {
+  D = d; rot = {lat: d.view.lat, lon: d.view.lon};
+  const list = document.getElementById('list');
+  d.places.forEach((p, k) => {
+    const li = document.createElement('li');
+    li.tabIndex = 0;
+    li.innerHTML = `<b class="m">${String(k).padStart(2, '0')} · ${p.label}</b><span>${p.org}</span><small>${p.what}</small>`;
+    const pick = () => { focus = k; aim(p); list.querySelectorAll('li').forEach((n, i) => n.toggleAttribute('aria-current', i === k)); };
+    li.onclick = pick; li.onkeydown = e => (e.key === 'Enter' || e.key === ' ') && (e.preventDefault(), pick());
+    list.append(li);
+  });
+  requestAnimationFrame(draw);
+});
+</script>
+</body>
+</html>

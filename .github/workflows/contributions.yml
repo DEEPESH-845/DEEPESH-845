@@ -1,4 +1,4 @@
-# Keeps assets/activity.svg + languages.svg in sync with the live contribution calendar.
+# Keeps assets/activity.svg in sync with the live contribution calendar.
 name: contribution graph
 
 on:
@@ -14,14 +14,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Render activity + languages panels
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"   # tomllib needs 3.11+
+      - name: Render activity panel
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python3 scripts/contrib_graph.py
+        run: python3 scripts/render.py activity
       - name: Commit if changed
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git diff --quiet assets/activity.svg assets/languages.svg && exit 0
-          git commit -m "chore: refresh activity panels" assets/activity.svg assets/languages.svg
+          git diff --quiet assets/activity.svg && exit 0
+          git commit -m "chore: refresh activity panel" assets/activity.svg
           git push
