@@ -75,7 +75,7 @@ Every number traces to `Resume-Updater/data/*.yaml` (the claims register) or to 
 | Guardiant 85% latency cut; Kinetic Keys 35% | `proj-guardiant-01`, `proj-kinetickeys-02` |
 | Kavach ₹1,84,636 → ₹14,257 at equal human cost, ~1 ms | Kavach README (generated benchmark corpus; stated as such) |
 | ZeroCloud ~2 s, 26-model catalog, < 5 MB, v0.1.0 (Aug 2026), 9.4% median error over 8 machines, 90% → 54.5% interval fix, pre-1.0 gate | ZeroCloud README and releases |
-| Globe: client systems in Houston and San Francisco; Qualcomm apprenticeship, hybrid, Bengaluru | Stated by Deepesh, 2026-10-03 (hybrid matches `exp-qualcomm`; Bengaluru is not yet in the register) |
+| Globe: Bengaluru (Qualcomm, hybrid apprenticeship), Houston (Halliburton, remote internship), San Francisco (Outlier.ai, freelance, remote) | `exp-qualcomm`, `exp-halliburton`, `exp-outlier`; cities stated by Deepesh, 2026-10-03 |
 
 ## Research summary (Oct 2026)
 

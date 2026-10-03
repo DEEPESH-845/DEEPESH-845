@@ -177,16 +177,16 @@ kind = "team"
 
 [[place]]
 label = "HOUSTON, USA"
-org = "Client systems"
-what = "built remotely from India"
+org = "Halliburton"
+what = "remote internship"
 lat = 29.76
 lon = -95.37
-kind = "client"
+kind = "team"
 
 [[place]]
 label = "SAN FRANCISCO, USA"
-org = "Client systems"
-what = "built remotely from India"
+org = "Outlier.ai"
+what = "freelance, remote"
 lat = 37.77
 lon = -122.42
-kind = "client"
+kind = "team"

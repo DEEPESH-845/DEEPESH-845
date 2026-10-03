@@ -10,7 +10,7 @@
 
 </div>
 
-Final-year Electronics &amp; Computer Engineering at Thapar Institute, previously at Qualcomm, Halliburton and Outlier.ai. In 2026, three systems I built with my teams placed at national or global level. I've built client systems for teams in Houston and San Francisco from India, and Kavach and ZeroCloud are live right now.
+Final-year Electronics &amp; Computer Engineering at Thapar Institute, previously at Qualcomm, Halliburton and Outlier.ai. In 2026, three systems I built with my teams placed at national or global level. From India, I've built for teams in Bengaluru, Houston and San Francisco, and Kavach and ZeroCloud are live right now.
 
 <br />
 
@@ -151,7 +151,7 @@ Led the team behind the fest platform. Integrated payments, ticketing and CDN be
 
 ## `04` Reach
 
-<img src="./assets/globe.svg" width="100%" alt="Particle globe. Arcs leave Punjab, India for Bengaluru (Qualcomm, hybrid apprenticeship), Houston, USA and San Francisco, USA (client systems built remotely from India). Client cities are shown without client names." />
+<img src="./assets/globe.svg" width="100%" alt="Particle globe. Arcs leave Punjab, India for Bengaluru (Qualcomm, hybrid apprenticeship), Houston, USA (Halliburton, remote internship) and San Francisco, USA (Outlier.ai, freelance, remote). All work was done from India." />
 
 **[Explore the interactive globe →](https://deepesh-845.github.io/DEEPESH-845/globe/)**  &nbsp;Drag to rotate; same data as above.
 

@@ -319,11 +319,10 @@ def globe(d):
               text(lx + 30, y + 5, p["label"], 17, TEXT, "m", weight=700, ls=.5),
               text(lx + 30, y + 28, p["org"], 15, TEXT2),
               text(lx + 30, y + 48, p["what"], 13.5, MUTED)]
-    b.append(text(lx, 400, "Client cities shown, never names.", 13, MUTED))
-    b.append(text(lx, 420, "All work done from India.", 13, MUTED))
+    b.append(text(lx, 400, "All work done from India.", 13, MUTED))
     label = ("Global reach: a particle globe with arcs from " + base["label"].title() + " to " +
              ", ".join(f'{p["label"].title()} ({p["org"]}, {p["what"]})' for p in others) +
-             ". Client cities are shown without client names; all work was done from India.")
+             ". All work was done from India.")
     json.dump({"view": {"lat": lat0, "lon": lon0}, "places": places, "land": land()},
               open(os.path.join(ROOT, "globe", "data.json"), "w"), separators=(",", ":"))
     return panel(464, label, "".join(b))
