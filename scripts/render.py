@@ -77,12 +77,12 @@ def signal(d, dur=5, offset=0, width=3.2):
 # ── panels ──────────────────────────────────────────────────────────────────
 def hero(d):
     i, tops = d["identity"], [a for a in d["award"] if a["tier"] == 1]
-    label = (f'{i["name"]}, {i["role"].lower()} based in {i["base"].title()}. {i["line1"]} {i["line2"]} '
+    label = (f'{i["name"]}, based in {i["base"].title()}. {i["tagline"]}. {i["line1"]} {i["line2"]} '
              + ". ".join(f'{a["title"].title()}, {a["event"]}' for a in tops) + f'. {i["now"].capitalize()}.')
     b = [f'<circle class="b" cx="44" cy="52" r="4" fill="{SIGNAL}"/>',
          text(58, 57, i["now"], 14, TEXT2, "m", ls=1.2),
          text(38, 138, i["name"], 66, TEXT, weight=700, ls=-1.6),
-         text(40, 182, i["role"], 17, SIGNAL, "m", ls=3),
+         text(40, 182, i["tagline"].upper(), 17, SIGNAL, "m", ls=3),
          text(616, 248, "BASE · " + i["base"], 12, MUTED, "m", "middle", ls=1.5),
          text(40, 232, i["line1"], 23, TEXT2),
          text(40, 264, i["line2"], 23, TEXT2),

@@ -4,13 +4,13 @@
 -->
 <div align="center">
 
-<a href="https://deepesh.qzz.io/"><img src="./assets/hero.svg" width="100%" alt="Deepesh Kakkar, AI and full-stack engineer based in Punjab, India. I build AI that runs where the decision happens: on robots, phones, bank logins and payment rails. Global Winner, Qualcomm Snapdragon Multiverse Hackathon 2026. National Runner-Up, PSB Hackathon 2026. National Top 5 in track, Samsung Solve for Tomorrow 2026. Now building Kavach, a trust layer for agentic payments." /></a>
+<a href="https://deepesh.qzz.io/"><img src="./assets/hero.svg" width="100%" alt="Deepesh Kakkar, based in Punjab, India. I lead teams that finish at the top. I build AI that runs where the decision happens: on robots, phones, bank logins and payment rails. Global Winner, Qualcomm Snapdragon Multiverse Hackathon 2026. National Runner-Up, PSB Hackathon 2026. National Top 5 in track, Samsung Solve for Tomorrow 2026. Now building Kavach, a trust layer for agentic payments." /></a>
 
 **[Selected systems ↓](#02-selected-systems)** &nbsp;·&nbsp; [Portfolio](https://deepesh.qzz.io/) &nbsp;·&nbsp; [LinkedIn](https://www.linkedin.com/in/deepesh-kakkar/) &nbsp;·&nbsp; [Email](mailto:deepeshkakkar.work@gmail.com)
 
 </div>
 
-Final-year Electronics &amp; Computer Engineering at Thapar Institute, previously at Qualcomm, Halliburton and Outlier.ai. In 2026, three systems I built with my teams placed at national or global level. From India, I've built for teams in Bengaluru, Houston and San Francisco, and Kavach and ZeroCloud are live right now.
+Final-year Electronics &amp; Computer Engineering at Thapar Institute; previously at Qualcomm, Halliburton and Outlier.ai. Two systems are live now: [Kavach](https://kavach-production-0363.up.railway.app/tour/) decides in ~1 ms whether an AI agent's payment goes through, and [ZeroCloud](https://github.com/DEEPESH-845/ZeroCloud#install) predicts how fast a local LLM will run on your laptop before you download it.
 
 <br />
 
@@ -71,7 +71,7 @@ The deployment target is the architecture. Every target I've built for, with the
 - **Intelligence** &nbsp;Each patient is their own baseline. An alert fires past 2 standard deviations sustained for 3 days, graded at 2, 3 and 4 SD.
 - **Outcome** &nbsp;Clinician-ready FHIR R4 export. Top 20 overall from 40,000+ applications.
 
-[**Live demo →**](https://neuro-trace-v1.vercel.app/) &nbsp;·&nbsp; [Source](https://github.com/DEEPESH-845/NeuroTrace)
+[**Live demo →**](https://neuro-trace-v1.vercel.app/)
 
 <br />
 
